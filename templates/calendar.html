@@ -64,7 +64,7 @@
                         <span class="task-badge">${task.classCode !== 'DEFAULT' ? task.classCode : 'General'}</span>
                         <span class="task-title">${task.title}</span>
                     </div>
-                    <span class="task-date">${new Date(task.start).toLocaleDateString()}</span>
+                    <span class="task-date" style="color: black;"><strong>${new Date(task.start).toLocaleDateString()}</strong></span>
                     `;
                     li.onclick = () => toggleTaskStatus(task.id);
                     taskListEl.appendChild(li);
