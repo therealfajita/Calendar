@@ -10,7 +10,7 @@ import requests
 app = Flask(__name__)
 
 # REPLACE WITH YOUR ACTUAL ICAL/URL FEED
-FEED_URL = "YOUR_CALENDAR_ICAL_URL_HERE"
+FEED_URL = "https://gatech.instructure.com/feeds/calendars/user_ZwmEaflRhKApN4Nah3ijlSpy2QTYELYfBXKl8Cw2.ics"
 JSON_FILE = "tasks.json"
 
 
@@ -72,7 +72,7 @@ def background_sync_scheduler(interval_seconds=900):
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("calendar.html")
 
 
 @app.route("/api/tasks", methods=["GET"])
