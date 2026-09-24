@@ -1,0 +1,2882 @@
+{
+    "event-calendar-event-5225505": {
+        "uid": "event-calendar-event-5225505",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-08-25T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226127": {
+        "uid": "event-calendar-event-5226127",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-08-25T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2601816": {
+        "uid": "event-assignment-2601816",
+        "title": "Lecture 1 - Polls 1 & 2 [EAS-1601-A]",
+        "start": "2026-08-25T19:15:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228367": {
+        "uid": "event-calendar-event-5228367",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-08-27T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226759": {
+        "uid": "event-calendar-event-5226759",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-08-27T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226335": {
+        "uid": "event-calendar-event-5226335",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-08-27T17:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225507": {
+        "uid": "event-calendar-event-5225507",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-08-27T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2614468": {
+        "uid": "event-assignment-2614468",
+        "title": "Lecture 2 - Polls 1 & 2 [EAS-1601-A]",
+        "start": "2026-08-27T19:15:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565128": {
+        "uid": "event-assignment-2565128",
+        "title": "0.0 Warmup [MATH 1553]",
+        "start": "2026-08-28",
+        "status": "To Do"
+    },
+    "event-assignment-2599360": {
+        "uid": "event-assignment-2599360",
+        "title": "Week 1 Participation - Video Introduction [ISYE-2027-B]",
+        "start": "2026-08-28",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254287": {
+        "uid": "event-calendar-event-5254287",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-08-31T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2559596": {
+        "uid": "event-assignment-2559596",
+        "title": "Lecture 3  Miniquiz  - Casting, Zip, Sets & Lambda [CS-2316-B]",
+        "start": "2026-08-31",
+        "status": "To Do"
+    },
+    "event-assignment-2459862": {
+        "uid": "event-assignment-2459862",
+        "title": "Pre-Lab Quiz 1 (Universe to Stars) [EAS-1601- All Lab Sections]",
+        "start": "2026-09-01T12:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228369": {
+        "uid": "event-calendar-event-5228369",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-09-01T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226657": {
+        "uid": "event-calendar-event-5226657",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-09-01T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225509": {
+        "uid": "event-calendar-event-5225509",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-09-01T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226129": {
+        "uid": "event-calendar-event-5226129",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-09-01T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2620780": {
+        "uid": "event-assignment-2620780",
+        "title": "Lecture 3 - Polls 1 & 2 [EAS-1601-A]",
+        "start": "2026-09-01T19:15:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254571": {
+        "uid": "event-calendar-event-5254571",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-09-02T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226441": {
+        "uid": "event-calendar-event-5226441",
+        "title": "Quiz 1 Concept 1 Review Session [ISYE-2027-B]",
+        "start": "2026-09-02T21:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2559640": {
+        "uid": "event-assignment-2559640",
+        "title": "Lecture 1 Coding [CS-2316-B]",
+        "start": "2026-09-02",
+        "status": "To Do"
+    },
+    "event-assignment-2559580": {
+        "uid": "event-assignment-2559580",
+        "title": "Lecture 1 Miniquiz - command line [CS-2316-B]",
+        "start": "2026-09-02",
+        "status": "To Do"
+    },
+    "event-assignment-2559642": {
+        "uid": "event-assignment-2559642",
+        "title": "Lecture 2 Coding [CS-2316-B]",
+        "start": "2026-09-02",
+        "status": "To Do"
+    },
+    "event-assignment-2559586": {
+        "uid": "event-assignment-2559586",
+        "title": "Lecture 2 Miniquiz [CS-2316-B]",
+        "start": "2026-09-02",
+        "status": "To Do"
+    },
+    "event-assignment-2565130": {
+        "uid": "event-assignment-2565130",
+        "title": "1.1 Linear Systems [MATH 1553]",
+        "start": "2026-09-02",
+        "status": "To Do"
+    },
+    "event-assignment-2559578": {
+        "uid": "event-assignment-2559578",
+        "title": "Lecture 4 Miniquiz - comprehensions & File I/O [CS-2316-B]",
+        "start": "2026-09-02",
+        "status": "To Do"
+    },
+    "event-assignment-2559666": {
+        "uid": "event-assignment-2559666",
+        "title": "lecture3 Coding [CS-2316-B]",
+        "start": "2026-09-02",
+        "status": "To Do"
+    },
+    "event-assignment-2559668": {
+        "uid": "event-assignment-2559668",
+        "title": "lecture4 Coding [CS-2316-B]",
+        "start": "2026-09-02",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228371": {
+        "uid": "event-calendar-event-5228371",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-09-03T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226761": {
+        "uid": "event-calendar-event-5226761",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-09-03T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226337": {
+        "uid": "event-calendar-event-5226337",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-09-03T17:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225511": {
+        "uid": "event-calendar-event-5225511",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-09-03T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2623328": {
+        "uid": "event-assignment-2623328",
+        "title": "Lecture 4 - Polls 1 & 2 [EAS-1601-A]",
+        "start": "2026-09-03T19:15:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-override-487984": {
+        "uid": "event-assignment-override-487984",
+        "title": "Lab 1: Universe to Stars (202608/EAS/1601/R3/88797) [EAS-1601- All Lab Sections]",
+        "start": "2026-09-03T22:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226445": {
+        "uid": "event-calendar-event-5226445",
+        "title": "Quiz 1 Concepts 2 Review Session [ISYE-2027-B]",
+        "start": "2026-09-04T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2559616": {
+        "uid": "event-assignment-2559616",
+        "title": "HW00 - Installation Verification [CS-2316-B]",
+        "start": "2026-09-04",
+        "status": "To Do"
+    },
+    "event-assignment-2565416": {
+        "uid": "event-assignment-2565416",
+        "title": "Quiz 1: Syllabus [MATH 1553]",
+        "start": "2026-09-04",
+        "status": "To Do"
+    },
+    "event-assignment-2624522": {
+        "uid": "event-assignment-2624522",
+        "title": "Participation Week 2 [ISYE-2027-B]",
+        "start": "2026-09-05",
+        "status": "To Do"
+    },
+    "event-assignment-2611332": {
+        "uid": "event-assignment-2611332",
+        "title": "Astrobiology [EAS-1601- All Lab Sections]",
+        "start": "2026-09-06",
+        "status": "To Do"
+    },
+    "event-assignment-2614500": {
+        "uid": "event-assignment-2614500",
+        "title": "Astrobiology [EAS-1601- All Lab Sections]",
+        "start": "2026-09-06",
+        "status": "To Do"
+    },
+    "event-assignment-2589088": {
+        "uid": "event-assignment-2589088",
+        "title": "Lab 1 Attendance [EAS-1601- All Lab Sections]",
+        "start": "2026-09-06",
+        "status": "To Do"
+    },
+    "event-assignment-2611328": {
+        "uid": "event-assignment-2611328",
+        "title": "Science [EAS-1601- All Lab Sections]",
+        "start": "2026-09-06",
+        "status": "To Do"
+    },
+    "event-assignment-2612224": {
+        "uid": "event-assignment-2612224",
+        "title": "Science [EAS-1601- All Lab Sections]",
+        "start": "2026-09-06",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254289": {
+        "uid": "event-calendar-event-5254289",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-09-07T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2459864": {
+        "uid": "event-assignment-2459864",
+        "title": "Pre-Lab Quiz 2 (Properties of Stars) [EAS-1601- All Lab Sections]",
+        "start": "2026-09-08T12:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228373": {
+        "uid": "event-calendar-event-5228373",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-09-08T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226659": {
+        "uid": "event-calendar-event-5226659",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-09-08T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225513": {
+        "uid": "event-calendar-event-5225513",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-09-08T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226131": {
+        "uid": "event-calendar-event-5226131",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-09-08T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2626216": {
+        "uid": "event-assignment-2626216",
+        "title": "Lecture 5 - Polls 1 & 2 [EAS-1601-A]",
+        "start": "2026-09-08T19:15:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5285483": {
+        "uid": "event-calendar-event-5285483",
+        "title": "Practice Quiz 1 Review Session [ISYE-2027-B]",
+        "start": "2026-09-08T22:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2459774": {
+        "uid": "event-assignment-2459774",
+        "title": "Brightness - Training [EAS-1601- All Lab Sections]",
+        "start": "2026-09-08",
+        "status": "To Do"
+    },
+    "event-assignment-2617362": {
+        "uid": "event-assignment-2617362",
+        "title": "Brightness - Training [EAS-1601- All Lab Sections]",
+        "start": "2026-09-08",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254573": {
+        "uid": "event-calendar-event-5254573",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-09-09T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2559558": {
+        "uid": "event-assignment-2559558",
+        "title": "Lecture 5 Miniquiz - HTML [CS-2316-B]",
+        "start": "2026-09-09",
+        "status": "To Do"
+    },
+    "event-assignment-2559670": {
+        "uid": "event-assignment-2559670",
+        "title": "lecture5 Coding [CS-2316-B]",
+        "start": "2026-09-09",
+        "status": "To Do"
+    },
+    "event-assignment-2565132": {
+        "uid": "event-assignment-2565132",
+        "title": "1.2 Row Reduction [MATH 1553]",
+        "start": "2026-09-09",
+        "status": "To Do"
+    },
+    "event-assignment-2565134": {
+        "uid": "event-assignment-2565134",
+        "title": "1.3 Parametric Form [MATH 1553]",
+        "start": "2026-09-09",
+        "status": "To Do"
+    },
+    "event-assignment-2559618": {
+        "uid": "event-assignment-2559618",
+        "title": "HW01 - Python Fundamentals [CS-2316-B]",
+        "start": "2026-09-09",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228375": {
+        "uid": "event-calendar-event-5228375",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-09-10T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226763": {
+        "uid": "event-calendar-event-5226763",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-09-10T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226339": {
+        "uid": "event-calendar-event-5226339",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-09-10T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225515": {
+        "uid": "event-calendar-event-5225515",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-09-10T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2624974": {
+        "uid": "event-assignment-2624974",
+        "title": "Quiz 1 Fall 2026- Requires Respondus LockDown Browser [EAS-1601-A]",
+        "start": "2026-09-10T19:15:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-override-493226": {
+        "uid": "event-assignment-override-493226",
+        "title": "Lab 2: Properties of Stars  (202608/EAS/1601/R3/88797) [EAS-1601- All Lab Sections]",
+        "start": "2026-09-10T22:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2631724": {
+        "uid": "event-assignment-2631724",
+        "title": "Participation Week 3 [ISYE-2027-B]",
+        "start": "2026-09-11",
+        "status": "To Do"
+    },
+    "event-assignment-2565418": {
+        "uid": "event-assignment-2565418",
+        "title": "Quiz 2 [MATH 1553]",
+        "start": "2026-09-11",
+        "status": "To Do"
+    },
+    "event-assignment-2620080": {
+        "uid": "event-assignment-2620080",
+        "title": "Color - Training [EAS-1601- All Lab Sections]",
+        "start": "2026-09-13",
+        "status": "To Do"
+    },
+    "event-assignment-2626896": {
+        "uid": "event-assignment-2626896",
+        "title": "Color - Training [EAS-1601- All Lab Sections]",
+        "start": "2026-09-13",
+        "status": "To Do"
+    },
+    "event-assignment-2589108": {
+        "uid": "event-assignment-2589108",
+        "title": "Lab 2 Attendance [EAS-1601- All Lab Sections]",
+        "start": "2026-09-13",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254291": {
+        "uid": "event-calendar-event-5254291",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-09-14T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2559560": {
+        "uid": "event-assignment-2559560",
+        "title": "Lecture 6: Requests and APIs [CS-2316-B]",
+        "start": "2026-09-14",
+        "status": "To Do"
+    },
+    "event-assignment-2559672": {
+        "uid": "event-assignment-2559672",
+        "title": "lecture6 Coding [CS-2316-B]",
+        "start": "2026-09-14",
+        "status": "To Do"
+    },
+    "event-assignment-2632780": {
+        "uid": "event-assignment-2632780",
+        "title": "Quiz 1 [ISYE-2027-B]",
+        "start": "2026-09-14",
+        "status": "To Do"
+    },
+    "event-assignment-2459866": {
+        "uid": "event-assignment-2459866",
+        "title": "Pre-Lab Quiz 3 (Crafting the Elements) [EAS-1601- All Lab Sections]",
+        "start": "2026-09-15T12:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228377": {
+        "uid": "event-calendar-event-5228377",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-09-15T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226661": {
+        "uid": "event-calendar-event-5226661",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-09-15T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225517": {
+        "uid": "event-calendar-event-5225517",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-09-15T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226133": {
+        "uid": "event-calendar-event-5226133",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-09-15T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2632102": {
+        "uid": "event-assignment-2632102",
+        "title": "Lecture 6 - Polls 1 & 2 [EAS-1601-A]",
+        "start": "2026-09-15T19:15:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254575": {
+        "uid": "event-calendar-event-5254575",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-09-16T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5295989": {
+        "uid": "event-calendar-event-5295989",
+        "title": "LTP/Bayes Rule Review Session [ISYE-2027-B]",
+        "start": "2026-09-16T21:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2559594": {
+        "uid": "event-assignment-2559594",
+        "title": "Lecture 7 Miniquiz - Regex Tracing [CS-2316-B]",
+        "start": "2026-09-16",
+        "status": "To Do"
+    },
+    "event-assignment-2559674": {
+        "uid": "event-assignment-2559674",
+        "title": "lecture7 Coding [CS-2316-B]",
+        "start": "2026-09-16",
+        "status": "To Do"
+    },
+    "event-assignment-2565136": {
+        "uid": "event-assignment-2565136",
+        "title": "2.1+2.2 Vectors and vector equation [MATH 1553]",
+        "start": "2026-09-16",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228379": {
+        "uid": "event-calendar-event-5228379",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-09-17T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226765": {
+        "uid": "event-calendar-event-5226765",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-09-17T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226341": {
+        "uid": "event-calendar-event-5226341",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-09-17T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225519": {
+        "uid": "event-calendar-event-5225519",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-09-17T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2634580": {
+        "uid": "event-assignment-2634580",
+        "title": "Lecture 7 - Polls 1 & 2 [EAS-1601-A]",
+        "start": "2026-09-17T19:15:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-override-496156": {
+        "uid": "event-assignment-override-496156",
+        "title": "Lab 3: Crafting the Elements (202608/EAS/1601/R3/88797) [EAS-1601- All Lab Sections]",
+        "start": "2026-09-17T22:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5295993": {
+        "uid": "event-calendar-event-5295993",
+        "title": "Practice Quiz 2 Review Session [ISYE-2027-B]",
+        "start": "2026-09-18T16:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2559620": {
+        "uid": "event-assignment-2559620",
+        "title": "HW02 - File I/O & CSV Module [CS-2316-B]",
+        "start": "2026-09-18",
+        "status": "To Do"
+    },
+    "event-assignment-2639836": {
+        "uid": "event-assignment-2639836",
+        "title": "Participation Week 4 [ISYE-2027-B]",
+        "start": "2026-09-18",
+        "status": "To Do"
+    },
+    "event-assignment-2565420": {
+        "uid": "event-assignment-2565420",
+        "title": "Quiz 3 [MATH 1553]",
+        "start": "2026-09-18",
+        "status": "To Do"
+    },
+    "event-assignment-2620696": {
+        "uid": "event-assignment-2620696",
+        "title": "Elements - Training [EAS-1601- All Lab Sections]",
+        "start": "2026-09-20",
+        "status": "To Do"
+    },
+    "event-assignment-2632040": {
+        "uid": "event-assignment-2632040",
+        "title": "Elements - Training [EAS-1601- All Lab Sections]",
+        "start": "2026-09-20",
+        "status": "To Do"
+    },
+    "event-assignment-2589112": {
+        "uid": "event-assignment-2589112",
+        "title": "Lab 3 Attendance [EAS-1601- All Lab Sections]",
+        "start": "2026-09-20",
+        "status": "To Do"
+    },
+    "event-calendar-event-5292347": {
+        "uid": "event-calendar-event-5292347",
+        "title": "Practice Quiz 2 Review Session [ISYE-2027-B]",
+        "start": "2026-09-21T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2559582": {
+        "uid": "event-assignment-2559582",
+        "title": "Lecture 8 Miniquiz - Regex Tracing (repetition, greedy, capture groups) [CS-2316-B]",
+        "start": "2026-09-21",
+        "status": "To Do"
+    },
+    "event-assignment-2559676": {
+        "uid": "event-assignment-2559676",
+        "title": "lecture8 Coding [CS-2316-B]",
+        "start": "2026-09-21",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228381": {
+        "uid": "event-calendar-event-5228381",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-09-22T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226663": {
+        "uid": "event-calendar-event-5226663",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-09-22T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225521": {
+        "uid": "event-calendar-event-5225521",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-09-22T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226135": {
+        "uid": "event-calendar-event-5226135",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-09-22T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2637726": {
+        "uid": "event-assignment-2637726",
+        "title": "Lecture 8 - Polls 1 & 2 [EAS-1601-A]",
+        "start": "2026-09-22T19:15:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2459880": {
+        "uid": "event-assignment-2459880",
+        "title": "Radial Velocity - Training [EAS-1601- All Lab Sections]",
+        "start": "2026-09-22",
+        "status": "To Do"
+    },
+    "event-assignment-2622202": {
+        "uid": "event-assignment-2622202",
+        "title": "Radial Velocity - Training [EAS-1601- All Lab Sections]",
+        "start": "2026-09-22",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254577": {
+        "uid": "event-calendar-event-5254577",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-09-23T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565376": {
+        "uid": "event-assignment-2565376",
+        "title": "Exam 1 [MATH 1553]",
+        "start": "2026-09-23T22:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2559570": {
+        "uid": "event-assignment-2559570",
+        "title": "Lecture 9 Miniquiz Quiz - Web Scraping [CS-2316-B]",
+        "start": "2026-09-23",
+        "status": "To Do"
+    },
+    "event-assignment-2559678": {
+        "uid": "event-assignment-2559678",
+        "title": "lecture9 Coding [CS-2316-B]",
+        "start": "2026-09-23",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228383": {
+        "uid": "event-calendar-event-5228383",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-09-24T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226767": {
+        "uid": "event-calendar-event-5226767",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-09-24T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2639842": {
+        "uid": "event-assignment-2639842",
+        "title": "Participation Week 5 [ISYE-2027-B]",
+        "start": "2026-09-24T16:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5303225": {
+        "uid": "event-calendar-event-5303225",
+        "title": "Discrete RV Review Session [ISYE-2027-B]",
+        "start": "2026-09-24T16:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226343": {
+        "uid": "event-calendar-event-5226343",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-09-24T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225523": {
+        "uid": "event-calendar-event-5225523",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-09-24T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2638998": {
+        "uid": "event-assignment-2638998",
+        "title": "Lecture 9 - Polls 1 & 2 [EAS-1601-A]",
+        "start": "2026-09-24T19:15:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565138": {
+        "uid": "event-assignment-2565138",
+        "title": "2.3 Matrix Equations [MATH 1553]",
+        "start": "2026-09-24",
+        "status": "To Do"
+    },
+    "event-assignment-2565140": {
+        "uid": "event-assignment-2565140",
+        "title": "2.4 Solution Sets [MATH 1553]",
+        "start": "2026-09-24",
+        "status": "To Do"
+    },
+    "event-calendar-event-5303229": {
+        "uid": "event-calendar-event-5303229",
+        "title": "Practice Quiz 3 Review Session [ISYE-2027-B]",
+        "start": "2026-09-25T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254295": {
+        "uid": "event-calendar-event-5254295",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-09-28T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5309495": {
+        "uid": "event-calendar-event-5309495",
+        "title": "Practice Quiz 3 Review Session [ISYE-2027-B]",
+        "start": "2026-09-28T21:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2637024": {
+        "uid": "event-assignment-2637024",
+        "title": "HW03 - Regex, APIs, BeautifulSoup [CS-2316-B]",
+        "start": "2026-09-28",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228385": {
+        "uid": "event-calendar-event-5228385",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-09-29T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226665": {
+        "uid": "event-calendar-event-5226665",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-09-29T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225525": {
+        "uid": "event-calendar-event-5225525",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-09-29T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226137": {
+        "uid": "event-calendar-event-5226137",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-09-29T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254579": {
+        "uid": "event-calendar-event-5254579",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-09-30T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5309499": {
+        "uid": "event-calendar-event-5309499",
+        "title": "Midterm Review Session [ISYE-2027-B]",
+        "start": "2026-09-30T21:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2559622": {
+        "uid": "event-assignment-2559622",
+        "title": "HW03 - Regular Expressions, APIs, and Webscraping [CS-2316-B]",
+        "start": "2026-09-30",
+        "status": "To Do"
+    },
+    "event-assignment-2565142": {
+        "uid": "event-assignment-2565142",
+        "title": "2.5 Linear Independence [MATH 1553]",
+        "start": "2026-09-30",
+        "status": "To Do"
+    },
+    "event-assignment-2565144": {
+        "uid": "event-assignment-2565144",
+        "title": "2.6 Subspaces [MATH 1553]",
+        "start": "2026-09-30",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228387": {
+        "uid": "event-calendar-event-5228387",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-10-01T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226769": {
+        "uid": "event-calendar-event-5226769",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-10-01T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226345": {
+        "uid": "event-calendar-event-5226345",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-10-01T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225527": {
+        "uid": "event-calendar-event-5225527",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-10-01T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254297": {
+        "uid": "event-calendar-event-5254297",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-10-05T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228389": {
+        "uid": "event-calendar-event-5228389",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-10-06T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226667": {
+        "uid": "event-calendar-event-5226667",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-10-06T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226139": {
+        "uid": "event-calendar-event-5226139",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-10-06T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254581": {
+        "uid": "event-calendar-event-5254581",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-10-07T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565146": {
+        "uid": "event-assignment-2565146",
+        "title": "2.7+2.9 Basis and Dimension and Related Theorems [MATH 1553]",
+        "start": "2026-10-07",
+        "status": "To Do"
+    },
+    "event-assignment-2565172": {
+        "uid": "event-assignment-2565172",
+        "title": "3.1 Matrix Transformation [MATH 1553]",
+        "start": "2026-10-07",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228391": {
+        "uid": "event-calendar-event-5228391",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-10-08T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226771": {
+        "uid": "event-calendar-event-5226771",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-10-08T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226347": {
+        "uid": "event-calendar-event-5226347",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-10-08T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225531": {
+        "uid": "event-calendar-event-5225531",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-10-08T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565422": {
+        "uid": "event-assignment-2565422",
+        "title": "Quiz 4 [MATH 1553]",
+        "start": "2026-10-09",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254299": {
+        "uid": "event-calendar-event-5254299",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-10-12T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228393": {
+        "uid": "event-calendar-event-5228393",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-10-13T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226669": {
+        "uid": "event-calendar-event-5226669",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-10-13T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225533": {
+        "uid": "event-calendar-event-5225533",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-10-13T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226141": {
+        "uid": "event-calendar-event-5226141",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-10-13T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2459794": {
+        "uid": "event-assignment-2459794",
+        "title": "Energy Balance - Training [EAS-1601- All Lab Sections]",
+        "start": "2026-10-13",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254583": {
+        "uid": "event-calendar-event-5254583",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-10-14T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565208": {
+        "uid": "event-assignment-2565208",
+        "title": "3.2 One to One and Onto Transformations [MATH 1553]",
+        "start": "2026-10-14",
+        "status": "To Do"
+    },
+    "event-assignment-2565210": {
+        "uid": "event-assignment-2565210",
+        "title": "3.3 Linear Transformations [MATH 1553]",
+        "start": "2026-10-14",
+        "status": "To Do"
+    },
+    "event-assignment-2559610": {
+        "uid": "event-assignment-2559610",
+        "title": "Final Project Phase I [CS-2316-B]",
+        "start": "2026-10-14",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228395": {
+        "uid": "event-calendar-event-5228395",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-10-15T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226773": {
+        "uid": "event-calendar-event-5226773",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-10-15T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226349": {
+        "uid": "event-calendar-event-5226349",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-10-15T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225535": {
+        "uid": "event-calendar-event-5225535",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-10-15T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565424": {
+        "uid": "event-assignment-2565424",
+        "title": "Quiz 5 [MATH 1553]",
+        "start": "2026-10-16",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254301": {
+        "uid": "event-calendar-event-5254301",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-10-19T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228397": {
+        "uid": "event-calendar-event-5228397",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-10-20T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226671": {
+        "uid": "event-calendar-event-5226671",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-10-20T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225537": {
+        "uid": "event-calendar-event-5225537",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-10-20T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226143": {
+        "uid": "event-calendar-event-5226143",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-10-20T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254585": {
+        "uid": "event-calendar-event-5254585",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-10-21T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565378": {
+        "uid": "event-assignment-2565378",
+        "title": "Exam 2 [MATH 1553]",
+        "start": "2026-10-21T22:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228399": {
+        "uid": "event-calendar-event-5228399",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-10-22T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226775": {
+        "uid": "event-calendar-event-5226775",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-10-22T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226351": {
+        "uid": "event-calendar-event-5226351",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-10-22T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225539": {
+        "uid": "event-calendar-event-5225539",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-10-22T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565216": {
+        "uid": "event-assignment-2565216",
+        "title": "3.4 Matrix Multiplication [MATH 1553]",
+        "start": "2026-10-22",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254303": {
+        "uid": "event-calendar-event-5254303",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-10-26T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228401": {
+        "uid": "event-calendar-event-5228401",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-10-27T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226673": {
+        "uid": "event-calendar-event-5226673",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-10-27T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225541": {
+        "uid": "event-calendar-event-5225541",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-10-27T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226145": {
+        "uid": "event-calendar-event-5226145",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-10-27T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2459810": {
+        "uid": "event-assignment-2459810",
+        "title": "Greenhouse Effect - Training [EAS-1601- All Lab Sections]",
+        "start": "2026-10-27",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254587": {
+        "uid": "event-calendar-event-5254587",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-10-28T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565222": {
+        "uid": "event-assignment-2565222",
+        "title": "3.5+3.6 The Inverse of a Matrix [MATH 1553]",
+        "start": "2026-10-28",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228403": {
+        "uid": "event-calendar-event-5228403",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-10-29T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226777": {
+        "uid": "event-calendar-event-5226777",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-10-29T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226353": {
+        "uid": "event-calendar-event-5226353",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-10-29T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225543": {
+        "uid": "event-calendar-event-5225543",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-10-29T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254305": {
+        "uid": "event-calendar-event-5254305",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-11-02T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228405": {
+        "uid": "event-calendar-event-5228405",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-11-03T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226675": {
+        "uid": "event-calendar-event-5226675",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-11-03T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225545": {
+        "uid": "event-calendar-event-5225545",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-11-03T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226147": {
+        "uid": "event-calendar-event-5226147",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-11-03T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254589": {
+        "uid": "event-calendar-event-5254589",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-11-04T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565224": {
+        "uid": "event-assignment-2565224",
+        "title": "Chapter 4 Determinants I [MATH 1553]",
+        "start": "2026-11-04",
+        "status": "To Do"
+    },
+    "event-assignment-2565226": {
+        "uid": "event-assignment-2565226",
+        "title": "Chapter 4 Determinants II [MATH 1553]",
+        "start": "2026-11-04",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228407": {
+        "uid": "event-calendar-event-5228407",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-11-05T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226779": {
+        "uid": "event-calendar-event-5226779",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-11-05T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226355": {
+        "uid": "event-calendar-event-5226355",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-11-05T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225547": {
+        "uid": "event-calendar-event-5225547",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-11-05T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565426": {
+        "uid": "event-assignment-2565426",
+        "title": "Quiz 6 [MATH 1553]",
+        "start": "2026-11-06",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254307": {
+        "uid": "event-calendar-event-5254307",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-11-09T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228409": {
+        "uid": "event-calendar-event-5228409",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-11-10T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226677": {
+        "uid": "event-calendar-event-5226677",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-11-10T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225549": {
+        "uid": "event-calendar-event-5225549",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-11-10T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226149": {
+        "uid": "event-calendar-event-5226149",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-11-10T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254591": {
+        "uid": "event-calendar-event-5254591",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-11-11T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565230": {
+        "uid": "event-assignment-2565230",
+        "title": "5.1 Eigenvectors and Eigenvalues [MATH 1553]",
+        "start": "2026-11-11",
+        "status": "To Do"
+    },
+    "event-assignment-2565238": {
+        "uid": "event-assignment-2565238",
+        "title": "5.2 The Characteristic Polynomial [MATH 1553]",
+        "start": "2026-11-11",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228411": {
+        "uid": "event-calendar-event-5228411",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-11-12T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226781": {
+        "uid": "event-calendar-event-5226781",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-11-12T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226357": {
+        "uid": "event-calendar-event-5226357",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-11-12T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225551": {
+        "uid": "event-calendar-event-5225551",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-11-12T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565428": {
+        "uid": "event-assignment-2565428",
+        "title": "Quiz 7 [MATH 1553]",
+        "start": "2026-11-13",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254309": {
+        "uid": "event-calendar-event-5254309",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-11-16T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228413": {
+        "uid": "event-calendar-event-5228413",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-11-17T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226679": {
+        "uid": "event-calendar-event-5226679",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-11-17T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225553": {
+        "uid": "event-calendar-event-5225553",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-11-17T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226151": {
+        "uid": "event-calendar-event-5226151",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-11-17T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2459790": {
+        "uid": "event-assignment-2459790",
+        "title": "End of an Era [EAS-1601- All Lab Sections]",
+        "start": "2026-11-17",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254593": {
+        "uid": "event-calendar-event-5254593",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-11-18T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565380": {
+        "uid": "event-assignment-2565380",
+        "title": "Exam 3 [MATH 1553]",
+        "start": "2026-11-18T23:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228415": {
+        "uid": "event-calendar-event-5228415",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-11-19T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226783": {
+        "uid": "event-calendar-event-5226783",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-11-19T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226359": {
+        "uid": "event-calendar-event-5226359",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-11-19T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225555": {
+        "uid": "event-calendar-event-5225555",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-11-19T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565240": {
+        "uid": "event-assignment-2565240",
+        "title": "5.4 Diagonalization [MATH 1553]",
+        "start": "2026-11-19",
+        "status": "To Do"
+    },
+    "event-assignment-2565244": {
+        "uid": "event-assignment-2565244",
+        "title": "5.5 Complex Eigenvalues [MATH 1553]",
+        "start": "2026-11-19",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254311": {
+        "uid": "event-calendar-event-5254311",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-11-23T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228417": {
+        "uid": "event-calendar-event-5228417",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-11-24T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226681": {
+        "uid": "event-calendar-event-5226681",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-11-24T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225557": {
+        "uid": "event-calendar-event-5225557",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-11-24T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226153": {
+        "uid": "event-calendar-event-5226153",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-11-24T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254595": {
+        "uid": "event-calendar-event-5254595",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-11-25T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228419": {
+        "uid": "event-calendar-event-5228419",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-11-26T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226785": {
+        "uid": "event-calendar-event-5226785",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-11-26T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226361": {
+        "uid": "event-calendar-event-5226361",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-11-26T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254313": {
+        "uid": "event-calendar-event-5254313",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-11-30T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228421": {
+        "uid": "event-calendar-event-5228421",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-12-01T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226683": {
+        "uid": "event-calendar-event-5226683",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-12-01T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225561": {
+        "uid": "event-calendar-event-5225561",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-12-01T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226155": {
+        "uid": "event-calendar-event-5226155",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-12-01T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254597": {
+        "uid": "event-calendar-event-5254597",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-12-02T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565248": {
+        "uid": "event-assignment-2565248",
+        "title": "5.6 Stochastic Matrices [MATH 1553]",
+        "start": "2026-12-02",
+        "status": "To Do"
+    },
+    "event-assignment-2565250": {
+        "uid": "event-assignment-2565250",
+        "title": "6.1 Inner Products [MATH 1553]",
+        "start": "2026-12-02",
+        "status": "To Do"
+    },
+    "event-assignment-2565252": {
+        "uid": "event-assignment-2565252",
+        "title": "6.2 Orthogonal Complements [MATH 1553]",
+        "start": "2026-12-02",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228423": {
+        "uid": "event-calendar-event-5228423",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-12-03T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226787": {
+        "uid": "event-calendar-event-5226787",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-12-03T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226363": {
+        "uid": "event-calendar-event-5226363",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-12-03T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225563": {
+        "uid": "event-calendar-event-5225563",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-12-03T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254315": {
+        "uid": "event-calendar-event-5254315",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-12-07T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5228425": {
+        "uid": "event-calendar-event-5228425",
+        "title": "F26-9:30am Lecture [ISYE-2027-B]",
+        "start": "2026-12-08T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226685": {
+        "uid": "event-calendar-event-5226685",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-12-08T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5225565": {
+        "uid": "event-calendar-event-5225565",
+        "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
+        "start": "2026-12-08T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226157": {
+        "uid": "event-calendar-event-5226157",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-12-08T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2622462": {
+        "uid": "event-assignment-2622462",
+        "title": "Approved Absence Makeup Submission [ISYE-2027-B]",
+        "start": "2026-12-08",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254599": {
+        "uid": "event-calendar-event-5254599",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-12-09T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226789": {
+        "uid": "event-calendar-event-5226789",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-12-10T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226365": {
+        "uid": "event-calendar-event-5226365",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-12-10T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226889": {
+        "uid": "event-calendar-event-5226889",
+        "title": "Final Exam (9:30 am section) [ISYE-2027-B]",
+        "start": "2026-12-14T13:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254317": {
+        "uid": "event-calendar-event-5254317",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-12-14T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226687": {
+        "uid": "event-calendar-event-5226687",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-12-15T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226159": {
+        "uid": "event-calendar-event-5226159",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-12-15T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-2565382": {
+        "uid": "event-assignment-2565382",
+        "title": "Final Exam [MATH 1553]",
+        "start": "2026-12-15T23:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254601": {
+        "uid": "event-calendar-event-5254601",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-12-16T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226791": {
+        "uid": "event-calendar-event-5226791",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-12-17T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226367": {
+        "uid": "event-calendar-event-5226367",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-12-17T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254319": {
+        "uid": "event-calendar-event-5254319",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-12-21T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226689": {
+        "uid": "event-calendar-event-5226689",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-12-22T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226161": {
+        "uid": "event-calendar-event-5226161",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-12-22T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254603": {
+        "uid": "event-calendar-event-5254603",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-12-23T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226793": {
+        "uid": "event-calendar-event-5226793",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-12-24T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226369": {
+        "uid": "event-calendar-event-5226369",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-12-24T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254321": {
+        "uid": "event-calendar-event-5254321",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2026-12-28T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226691": {
+        "uid": "event-calendar-event-5226691",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-12-29T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226163": {
+        "uid": "event-calendar-event-5226163",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-12-29T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254605": {
+        "uid": "event-calendar-event-5254605",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2026-12-30T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226795": {
+        "uid": "event-calendar-event-5226795",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2026-12-31T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226371": {
+        "uid": "event-calendar-event-5226371",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2026-12-31T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254323": {
+        "uid": "event-calendar-event-5254323",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-01-04T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226693": {
+        "uid": "event-calendar-event-5226693",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-01-05T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226165": {
+        "uid": "event-calendar-event-5226165",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-01-05T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254607": {
+        "uid": "event-calendar-event-5254607",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-01-06T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226797": {
+        "uid": "event-calendar-event-5226797",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-01-07T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226373": {
+        "uid": "event-calendar-event-5226373",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-01-07T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254325": {
+        "uid": "event-calendar-event-5254325",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-01-11T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226695": {
+        "uid": "event-calendar-event-5226695",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-01-12T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226167": {
+        "uid": "event-calendar-event-5226167",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-01-12T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254609": {
+        "uid": "event-calendar-event-5254609",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-01-13T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226799": {
+        "uid": "event-calendar-event-5226799",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-01-14T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226375": {
+        "uid": "event-calendar-event-5226375",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-01-14T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254327": {
+        "uid": "event-calendar-event-5254327",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-01-18T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226697": {
+        "uid": "event-calendar-event-5226697",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-01-19T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226169": {
+        "uid": "event-calendar-event-5226169",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-01-19T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254611": {
+        "uid": "event-calendar-event-5254611",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-01-20T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226801": {
+        "uid": "event-calendar-event-5226801",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-01-21T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226377": {
+        "uid": "event-calendar-event-5226377",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-01-21T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254329": {
+        "uid": "event-calendar-event-5254329",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-01-25T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226699": {
+        "uid": "event-calendar-event-5226699",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-01-26T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226171": {
+        "uid": "event-calendar-event-5226171",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-01-26T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254613": {
+        "uid": "event-calendar-event-5254613",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-01-27T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226803": {
+        "uid": "event-calendar-event-5226803",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-01-28T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226379": {
+        "uid": "event-calendar-event-5226379",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-01-28T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254331": {
+        "uid": "event-calendar-event-5254331",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-02-01T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226701": {
+        "uid": "event-calendar-event-5226701",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-02-02T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226173": {
+        "uid": "event-calendar-event-5226173",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-02-02T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254615": {
+        "uid": "event-calendar-event-5254615",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-02-03T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226805": {
+        "uid": "event-calendar-event-5226805",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-02-04T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226381": {
+        "uid": "event-calendar-event-5226381",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-02-04T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254333": {
+        "uid": "event-calendar-event-5254333",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-02-08T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226703": {
+        "uid": "event-calendar-event-5226703",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-02-09T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226175": {
+        "uid": "event-calendar-event-5226175",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-02-09T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254617": {
+        "uid": "event-calendar-event-5254617",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-02-10T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226807": {
+        "uid": "event-calendar-event-5226807",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-02-11T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226383": {
+        "uid": "event-calendar-event-5226383",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-02-11T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254335": {
+        "uid": "event-calendar-event-5254335",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-02-15T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226705": {
+        "uid": "event-calendar-event-5226705",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-02-16T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226177": {
+        "uid": "event-calendar-event-5226177",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-02-16T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254619": {
+        "uid": "event-calendar-event-5254619",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-02-17T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226809": {
+        "uid": "event-calendar-event-5226809",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-02-18T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226385": {
+        "uid": "event-calendar-event-5226385",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-02-18T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254337": {
+        "uid": "event-calendar-event-5254337",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-02-22T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226707": {
+        "uid": "event-calendar-event-5226707",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-02-23T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226179": {
+        "uid": "event-calendar-event-5226179",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-02-23T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254621": {
+        "uid": "event-calendar-event-5254621",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-02-24T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226811": {
+        "uid": "event-calendar-event-5226811",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-02-25T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226387": {
+        "uid": "event-calendar-event-5226387",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-02-25T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254339": {
+        "uid": "event-calendar-event-5254339",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-03-01T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226709": {
+        "uid": "event-calendar-event-5226709",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-03-02T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226181": {
+        "uid": "event-calendar-event-5226181",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-03-02T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254623": {
+        "uid": "event-calendar-event-5254623",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-03-03T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226813": {
+        "uid": "event-calendar-event-5226813",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-03-04T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226389": {
+        "uid": "event-calendar-event-5226389",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-03-04T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254341": {
+        "uid": "event-calendar-event-5254341",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-03-08T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226711": {
+        "uid": "event-calendar-event-5226711",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-03-09T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226183": {
+        "uid": "event-calendar-event-5226183",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-03-09T20:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254625": {
+        "uid": "event-calendar-event-5254625",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-03-10T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226815": {
+        "uid": "event-calendar-event-5226815",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-03-11T14:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226391": {
+        "uid": "event-calendar-event-5226391",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-03-11T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254343": {
+        "uid": "event-calendar-event-5254343",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-03-15T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226713": {
+        "uid": "event-calendar-event-5226713",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-03-16T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226185": {
+        "uid": "event-calendar-event-5226185",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-03-16T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254627": {
+        "uid": "event-calendar-event-5254627",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-03-17T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226817": {
+        "uid": "event-calendar-event-5226817",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-03-18T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226393": {
+        "uid": "event-calendar-event-5226393",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-03-18T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254345": {
+        "uid": "event-calendar-event-5254345",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-03-22T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226715": {
+        "uid": "event-calendar-event-5226715",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-03-23T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226187": {
+        "uid": "event-calendar-event-5226187",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-03-23T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254629": {
+        "uid": "event-calendar-event-5254629",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-03-24T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226819": {
+        "uid": "event-calendar-event-5226819",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-03-25T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226395": {
+        "uid": "event-calendar-event-5226395",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-03-25T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254347": {
+        "uid": "event-calendar-event-5254347",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-03-29T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226717": {
+        "uid": "event-calendar-event-5226717",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-03-30T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226189": {
+        "uid": "event-calendar-event-5226189",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-03-30T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254631": {
+        "uid": "event-calendar-event-5254631",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-03-31T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226821": {
+        "uid": "event-calendar-event-5226821",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-04-01T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226397": {
+        "uid": "event-calendar-event-5226397",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-04-01T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254349": {
+        "uid": "event-calendar-event-5254349",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-04-05T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226719": {
+        "uid": "event-calendar-event-5226719",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-04-06T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226191": {
+        "uid": "event-calendar-event-5226191",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-04-06T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254633": {
+        "uid": "event-calendar-event-5254633",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-04-07T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226823": {
+        "uid": "event-calendar-event-5226823",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-04-08T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226399": {
+        "uid": "event-calendar-event-5226399",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-04-08T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254351": {
+        "uid": "event-calendar-event-5254351",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-04-12T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226721": {
+        "uid": "event-calendar-event-5226721",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-04-13T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226193": {
+        "uid": "event-calendar-event-5226193",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-04-13T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254635": {
+        "uid": "event-calendar-event-5254635",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-04-14T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226825": {
+        "uid": "event-calendar-event-5226825",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-04-15T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226401": {
+        "uid": "event-calendar-event-5226401",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-04-15T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254353": {
+        "uid": "event-calendar-event-5254353",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-04-19T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226723": {
+        "uid": "event-calendar-event-5226723",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-04-20T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226195": {
+        "uid": "event-calendar-event-5226195",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-04-20T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254637": {
+        "uid": "event-calendar-event-5254637",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-04-21T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226827": {
+        "uid": "event-calendar-event-5226827",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-04-22T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226403": {
+        "uid": "event-calendar-event-5226403",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-04-22T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254355": {
+        "uid": "event-calendar-event-5254355",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-04-26T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226725": {
+        "uid": "event-calendar-event-5226725",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-04-27T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226197": {
+        "uid": "event-calendar-event-5226197",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-04-27T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254639": {
+        "uid": "event-calendar-event-5254639",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-04-28T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226829": {
+        "uid": "event-calendar-event-5226829",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-04-29T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226405": {
+        "uid": "event-calendar-event-5226405",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-04-29T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254357": {
+        "uid": "event-calendar-event-5254357",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-05-03T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226727": {
+        "uid": "event-calendar-event-5226727",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-05-04T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226199": {
+        "uid": "event-calendar-event-5226199",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-05-04T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254641": {
+        "uid": "event-calendar-event-5254641",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-05-05T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226831": {
+        "uid": "event-calendar-event-5226831",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-05-06T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226407": {
+        "uid": "event-calendar-event-5226407",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-05-06T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254359": {
+        "uid": "event-calendar-event-5254359",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-05-10T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226729": {
+        "uid": "event-calendar-event-5226729",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-05-11T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226201": {
+        "uid": "event-calendar-event-5226201",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-05-11T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254643": {
+        "uid": "event-calendar-event-5254643",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-05-12T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226833": {
+        "uid": "event-calendar-event-5226833",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-05-13T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226409": {
+        "uid": "event-calendar-event-5226409",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-05-13T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254361": {
+        "uid": "event-calendar-event-5254361",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-05-17T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226731": {
+        "uid": "event-calendar-event-5226731",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-05-18T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226203": {
+        "uid": "event-calendar-event-5226203",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-05-18T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254645": {
+        "uid": "event-calendar-event-5254645",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-05-19T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226835": {
+        "uid": "event-calendar-event-5226835",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-05-20T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226411": {
+        "uid": "event-calendar-event-5226411",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-05-20T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254363": {
+        "uid": "event-calendar-event-5254363",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-05-24T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226733": {
+        "uid": "event-calendar-event-5226733",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-05-25T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226205": {
+        "uid": "event-calendar-event-5226205",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-05-25T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254647": {
+        "uid": "event-calendar-event-5254647",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-05-26T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226837": {
+        "uid": "event-calendar-event-5226837",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-05-27T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226413": {
+        "uid": "event-calendar-event-5226413",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-05-27T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254365": {
+        "uid": "event-calendar-event-5254365",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-05-31T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226735": {
+        "uid": "event-calendar-event-5226735",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-06-01T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226207": {
+        "uid": "event-calendar-event-5226207",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-06-01T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254649": {
+        "uid": "event-calendar-event-5254649",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-06-02T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226839": {
+        "uid": "event-calendar-event-5226839",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-06-03T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226415": {
+        "uid": "event-calendar-event-5226415",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-06-03T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254367": {
+        "uid": "event-calendar-event-5254367",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-06-07T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226737": {
+        "uid": "event-calendar-event-5226737",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-06-08T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226209": {
+        "uid": "event-calendar-event-5226209",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-06-08T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254651": {
+        "uid": "event-calendar-event-5254651",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-06-09T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226841": {
+        "uid": "event-calendar-event-5226841",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-06-10T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226417": {
+        "uid": "event-calendar-event-5226417",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-06-10T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254369": {
+        "uid": "event-calendar-event-5254369",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-06-14T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226739": {
+        "uid": "event-calendar-event-5226739",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-06-15T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226211": {
+        "uid": "event-calendar-event-5226211",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-06-15T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254653": {
+        "uid": "event-calendar-event-5254653",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-06-16T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226843": {
+        "uid": "event-calendar-event-5226843",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-06-17T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226419": {
+        "uid": "event-calendar-event-5226419",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-06-17T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254371": {
+        "uid": "event-calendar-event-5254371",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-06-21T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226741": {
+        "uid": "event-calendar-event-5226741",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-06-22T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226213": {
+        "uid": "event-calendar-event-5226213",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-06-22T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254655": {
+        "uid": "event-calendar-event-5254655",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-06-23T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226845": {
+        "uid": "event-calendar-event-5226845",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-06-24T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226421": {
+        "uid": "event-calendar-event-5226421",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-06-24T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254373": {
+        "uid": "event-calendar-event-5254373",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-06-28T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226743": {
+        "uid": "event-calendar-event-5226743",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-06-29T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226215": {
+        "uid": "event-calendar-event-5226215",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-06-29T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254657": {
+        "uid": "event-calendar-event-5254657",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-06-30T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226847": {
+        "uid": "event-calendar-event-5226847",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-07-01T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226423": {
+        "uid": "event-calendar-event-5226423",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-07-01T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254375": {
+        "uid": "event-calendar-event-5254375",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-07-05T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226745": {
+        "uid": "event-calendar-event-5226745",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-07-06T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226217": {
+        "uid": "event-calendar-event-5226217",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-07-06T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254659": {
+        "uid": "event-calendar-event-5254659",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-07-07T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226849": {
+        "uid": "event-calendar-event-5226849",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-07-08T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226425": {
+        "uid": "event-calendar-event-5226425",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-07-08T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254377": {
+        "uid": "event-calendar-event-5254377",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-07-12T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226747": {
+        "uid": "event-calendar-event-5226747",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-07-13T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226219": {
+        "uid": "event-calendar-event-5226219",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-07-13T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254661": {
+        "uid": "event-calendar-event-5254661",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-07-14T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226851": {
+        "uid": "event-calendar-event-5226851",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-07-15T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226427": {
+        "uid": "event-calendar-event-5226427",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-07-15T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254379": {
+        "uid": "event-calendar-event-5254379",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-07-19T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226749": {
+        "uid": "event-calendar-event-5226749",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-07-20T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226221": {
+        "uid": "event-calendar-event-5226221",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-07-20T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254663": {
+        "uid": "event-calendar-event-5254663",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-07-21T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226853": {
+        "uid": "event-calendar-event-5226853",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-07-22T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226429": {
+        "uid": "event-calendar-event-5226429",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-07-22T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254381": {
+        "uid": "event-calendar-event-5254381",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-07-26T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226751": {
+        "uid": "event-calendar-event-5226751",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-07-27T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226223": {
+        "uid": "event-calendar-event-5226223",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-07-27T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254665": {
+        "uid": "event-calendar-event-5254665",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-07-28T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226855": {
+        "uid": "event-calendar-event-5226855",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-07-29T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226431": {
+        "uid": "event-calendar-event-5226431",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-07-29T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254383": {
+        "uid": "event-calendar-event-5254383",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-08-02T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226753": {
+        "uid": "event-calendar-event-5226753",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-08-03T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226225": {
+        "uid": "event-calendar-event-5226225",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-08-03T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254667": {
+        "uid": "event-calendar-event-5254667",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-08-04T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226857": {
+        "uid": "event-calendar-event-5226857",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-08-05T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226433": {
+        "uid": "event-calendar-event-5226433",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-08-05T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254385": {
+        "uid": "event-calendar-event-5254385",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-08-09T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226755": {
+        "uid": "event-calendar-event-5226755",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-08-10T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226227": {
+        "uid": "event-calendar-event-5226227",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-08-10T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254669": {
+        "uid": "event-calendar-event-5254669",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-08-11T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226859": {
+        "uid": "event-calendar-event-5226859",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-08-12T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226435": {
+        "uid": "event-calendar-event-5226435",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-08-12T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254387": {
+        "uid": "event-calendar-event-5254387",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-08-16T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226757": {
+        "uid": "event-calendar-event-5226757",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-08-17T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226229": {
+        "uid": "event-calendar-event-5226229",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-08-17T19:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254671": {
+        "uid": "event-calendar-event-5254671",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-08-18T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226861": {
+        "uid": "event-calendar-event-5226861",
+        "title": "Lecture [ISYE-2027-B]",
+        "start": "2027-08-19T13:30:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5226437": {
+        "uid": "event-calendar-event-5226437",
+        "title": "Dr. Moug Office Hours [ISYE-2027-B]",
+        "start": "2027-08-19T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254389": {
+        "uid": "event-calendar-event-5254389",
+        "title": "Tiffany Ng Office Hours (Virtual) [ISYE-2027-B]",
+        "start": "2027-08-23T18:00:00+00:00",
+        "status": "To Do"
+    },
+    "event-calendar-event-5254673": {
+        "uid": "event-calendar-event-5254673",
+        "title": "Drew Park Office Hours (In-Person and Virtual) [ISYE-2027-B]",
+        "start": "2027-08-25T18:00:00+00:00",
+        "status": "To Do"
+    }
+}
