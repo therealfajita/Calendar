@@ -6,6 +6,7 @@ from datetime import datetime
 from flask import Flask, jsonify, render_template, request
 import icalendar
 import requests
+import re
 
 app = Flask(__name__)
 
@@ -75,24 +76,44 @@ def index():
     return render_template("calendar.html")
 
 
+CLASS_REGEX = r"\[([A-Za-z0-9\s-]+)\]"
 @app.route("/api/tasks", methods=["GET"])
 def get_tasks():
     tasks = load_tasks()
-    events = [
-        {
-            "id": item["uid"],
-            "title": item["title"],
-            "start": item["start"],
-            "status": item.get("status", "To Do"),
-            # Add class names for custom styling based on status
-            "className": (
-                "completed-task"
-                if item.get("status") == "Completed"
-                else "todo-task"
-            ),
-        }
-        for item in tasks.values()
-    ]
+    events = []
+
+    for item in tasks.values():
+        title = item["title"]
+
+        # Search for class pattern like [MATH 1553] or [ISYE-2027-B]
+        match = re.search(CLASS_REGEX, title)
+        if match:
+            # Clean class code (e.g., "MATH-1553" or "ISYE-2027-B")
+            class_code = (
+                match.group(1).replace(" ", "-").upper()
+            )  # turns "MATH 1553" into "MATH-1553"
+        else:
+            class_code = "DEFAULT"
+
+        status = item.get("status", "To Do")
+        is_completed = status == "Completed"
+
+        events.append(
+            {
+                "id": item["uid"],
+                "title": title,
+                "start": item["start"],
+                "status": status,
+                "classCode": class_code,
+                # Assign CSS classes: completed status takes precedence, otherwise use class-specific style
+                "className": (
+                    "completed-task"
+                    if is_completed
+                    else f"class-{class_code.lower()}"
+                ),
+            }
+        )
+
     return jsonify(events)
 
 

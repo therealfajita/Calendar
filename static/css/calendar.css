@@ -77,7 +77,7 @@ body {
 }
 
 .task-item.done {
-    border-left-color: #a0aec0;
+    border-left-color: #a0aec0 !important;
     opacity: 0.6;
 }
 
@@ -95,14 +95,113 @@ body {
     color: #718096;
 }
 
-/* FullCalendar styling overrides */
+/* --- TASK TAG / BADGE STYLING --- */
+.task-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 8px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   CLASS 1: EAS-1601-Lab-All-Sections (Habitable Planet Lab) - Teal
+   ========================================================================== */
+.class-eas-1601 {
+    background-color: #0d9488 !important;
+    border-color: #0f766e !important;
+    color: #ffffff !important;
+}
+.task-item.class-eas-1601 {
+    background-color: #f0fdfa;
+    border-left-color: #0d9488;
+}
+.task-item.class-eas-1601 .task-badge {
+    background-color: #ccfbf1;
+    color: #0f766e;
+}
+
+/* ==========================================================================
+   CLASS 2: ISYE-2027-B (Probability With Apps) - Emerald Green
+   ========================================================================== */
+.class-isye-2027-b {
+    background-color: #16a34a !important;
+    border-color: #15803d !important;
+    color: #ffffff !important;
+}
+.task-item.class-isye-2027-b {
+    background-color: #f0fdf4;
+    border-left-color: #16a34a;
+}
+.task-item.class-isye-2027-b .task-badge {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+/* ==========================================================================
+   CLASS 3: MATH-1553 (Intro to Linear Algebra) - Royal Blue
+   ========================================================================== */
+.class-math-1553 {
+    background-color: #2563eb !important;
+    border-color: #1d4ed8 !important;
+    color: #ffffff !important;
+}
+.task-item.class-math-1553 {
+    background-color: #eff6ff;
+    border-left-color: #2563eb;
+}
+.task-item.class-math-1553 .task-badge {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+/* ==========================================================================
+   CLASS 4: CS-2316-B (Data Input and Manipulation) - Purple
+   ========================================================================== */
+.class-cs-2316-b {
+    background-color: #9333ea !important;
+    border-color: #7e22ce !important;
+    color: #ffffff !important;
+}
+.task-item.class-cs-2316-b {
+    background-color: #faf5ff;
+    border-left-color: #9333ea;
+}
+.task-item.class-cs-2316-b .task-badge {
+    background-color: #f3e8ff;
+    color: #7e22ce;
+}
+
+/* ==========================================================================
+   CLASS 5: EAS-1601-A (Habitable Planet Lecture) - Amber / Coral
+   ========================================================================== */
+.class-eas-1601-a {
+    background-color: #d97706 !important;
+    border-color: #b45309 !important;
+    color: #ffffff !important;
+}
+.task-item.class-eas-1601-a {
+    background-color: #fffbeb;
+    border-left-color: #d97706;
+}
+.task-item.class-eas-1601-a .task-badge {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+/* Default / General Class Styling */
+.class-default {
+    background-color: #64748b !important;
+    border-color: #475569 !important;
+    color: #ffffff !important;
+}
+
+/* Completed Task Override */
 .completed-task {
     background-color: #cbd5e0 !important;
     border-color: #a0aec0 !important;
     text-decoration: line-through;
-}
-
-.todo-task {
-    background-color: #3182ce !important;
-    border-color: #2b6cb0 !important;
 }

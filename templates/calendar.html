@@ -48,21 +48,28 @@
 
         // Load side list view
         function loadTaskList() {
-          fetch('/api/tasks')
-            .then(res => res.json())
-            .then(events => {
-              taskListEl.innerHTML = '';
-              events.forEach(task => {
-                const li = document.createElement('li');
-                li.className = `task-item ${task.status === 'Completed' ? 'done' : ''}`;
-                li.innerHTML = `
-                  <span class="task-title">${task.title}</span>
-                  <span class="task-date">${new Date(task.start).toLocaleDateString()}</span>
-                `;
-                li.onclick = () => toggleTaskStatus(task.id);
-                taskListEl.appendChild(li);
-              });
-            });
+            fetch('/api/tasks')
+                .then(res => res.json())
+                .then(events => {
+                taskListEl.innerHTML = '';
+                events.forEach(task => {
+                    const li = document.createElement('li');
+                    
+                    // Add class code styling along with completed check
+                    const classStyle = task.status === 'Completed' ? 'done' : `class-${task.classCode.toLowerCase()}`;
+                    li.className = `task-item ${classStyle}`;
+                    
+                    li.innerHTML = `
+                    <div>
+                        <span class="task-badge">${task.classCode !== 'DEFAULT' ? task.classCode : 'General'}</span>
+                        <span class="task-title">${task.title}</span>
+                    </div>
+                    <span class="task-date">${new Date(task.start).toLocaleDateString()}</span>
+                    `;
+                    li.onclick = () => toggleTaskStatus(task.id);
+                    taskListEl.appendChild(li);
+                });
+                });
         }
 
         function toggleTaskStatus(uid) {
