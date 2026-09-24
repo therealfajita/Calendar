@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Calendar Dashboard</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- FullCalendar Library -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <h1>Task & Assignment Dashboard</h1>
+        <span id="sync-status">Auto-Sync Active</span>
+    </header>
+
+    <div class="container">
+        <!-- Main Calendar View -->
+        <main class="calendar-card">
+            <div id="calendar"></div>
+        </main>
+
+        <!-- Sidebar Task Tracker -->
+        <aside class="sidebar-card">
+            <h2>Upcoming Tasks</h2>
+            <ul id="task-list"></ul>
+        </aside>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var taskListEl = document.getElementById('task-list');
+
+        // Initialize FullCalendar
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          events: '/api/tasks',
+          eventClick: function(info) {
+            // Toggle task completed status when clicked on calendar
+            toggleTaskStatus(info.event.id);
+          }
+        });
+
+        calendar.render();
+
+        // Load side list view
+        function loadTaskList() {
+          fetch('/api/tasks')
+            .then(res => res.json())
+            .then(events => {
+              taskListEl.innerHTML = '';
+              events.forEach(task => {
+                const li = document.createElement('li');
+                li.className = `task-item ${task.status === 'Completed' ? 'done' : ''}`;
+                li.innerHTML = `
+                  <span class="task-title">${task.title}</span>
+                  <span class="task-date">${new Date(task.start).toLocaleDateString()}</span>
+                `;
+                li.onclick = () => toggleTaskStatus(task.id);
+                taskListEl.appendChild(li);
+              });
+            });
+        }
+
+        function toggleTaskStatus(uid) {
+          fetch('/api/tasks/toggle', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ uid: uid })
+          })
+          .then(res => res.json())
+          .then(data => {
+            if (data.success) {
+              calendar.refetchEvents();
+              loadTaskList();
+            }
+          });
+        }
+
+        // Initial sidebar load
+        loadTaskList();
+
+        // Refresh data every 5 minutes automatically
+        setInterval(() => {
+          calendar.refetchEvents();
+          loadTaskList();
+        }, 300000);
+      });
+    </script>
+</body>
+</html>
