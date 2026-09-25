@@ -153,6 +153,10 @@ def get_tasks():
 
         title = item["title"]
 
+        #Skips lecture events
+        if title == "F26-9:30am Lecture [ISYE-2027-B]" or title == "Lecture [ISYE-2027-B]":
+            continue
+
         match = re.search(CLASS_REGEX, title)
         if match:
             class_code = match.group(1).replace(" ", "-").upper()

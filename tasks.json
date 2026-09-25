@@ -2884,5 +2884,23 @@
         "title": "Pre-Lab Quiz 4 (Exoplanet Detection) [EAS-1601- All Lab Sections]",
         "start": "2026-09-29T12:00:00+00:00",
         "status": "To Do"
+    },
+    "event-assignment-2640584": {
+        "uid": "event-assignment-2640584",
+        "title": "Quiz 2 [ISYE-2027-B]",
+        "start": "2026-09-24",
+        "status": "To Do"
+    },
+    "event-assignment-2589114": {
+        "uid": "event-assignment-2589114",
+        "title": "Lab 4 Attendance [EAS-1601- All Lab Sections]",
+        "start": "2026-10-04",
+        "status": "To Do"
+    },
+    "event-assignment-2621796": {
+        "uid": "event-assignment-2621796",
+        "title": "Transits - Training [EAS-1601- All Lab Sections]",
+        "start": "2026-10-04",
+        "status": "To Do"
     }
 }

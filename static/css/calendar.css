@@ -110,16 +110,16 @@ body {
 /* ==========================================================================
    CLASS 1: EAS-1601-Lab-All-Sections (Habitable Planet Lab) - Teal
    ========================================================================== */
-.class-eas-1601 {
+.class-eas-1601--all-lab-sections {
     background-color: #0d9488 !important;
     border-color: #0f766e !important;
     color: #ffffff !important;
 }
-.task-item.class-eas-1601 {
+.task-item.class-eas-1601--all-lab-sections {
     background-color: #f0fdfa;
     border-left-color: #0d9488;
 }
-.task-item.class-eas-1601 .task-badge {
+.task-item.class-eas-1601--all-lab-sections .task-badge {
     background-color: #ccfbf1;
     color: #0f766e;
 }
