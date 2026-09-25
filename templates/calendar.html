@@ -30,72 +30,81 @@
     </div>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var taskListEl = document.getElementById('task-list');
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var taskListEl = document.getElementById('task-list');
 
-        // Initialize FullCalendar
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth',
-          events: '/api/tasks',
-          eventClick: function(info) {
-            // Toggle task completed status when clicked on calendar
-            toggleTaskStatus(info.event.id);
-          }
-        });
+    // Initialize FullCalendar with Month, Week, and Day views + Time Grid
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+      },
+      // Time grid configuration (shows times like Google Calendar)
+      slotMinTime: '06:00:00', // Start time slot (e.g., 6:00 AM)
+      slotMaxTime: '23:00:00', // End time slot (e.g., 11:00 PM)
+      slotDuration: '00:30:00', // 30-minute intervals
+      allDaySlot: true, // Show all-day events header row
+      nowIndicator: true, // Red line indicating current time
+      events: '/api/tasks',
+      eventClick: function(info) {
+        toggleTaskStatus(info.event.id);
+      }
+    });
 
-        calendar.render();
+    calendar.render();
 
-        // Load side list view
-        function loadTaskList() {
-            fetch('/api/tasks')
-                .then(res => res.json())
-                .then(events => {
-                taskListEl.innerHTML = '';
-                events.forEach(task => {
-                    const li = document.createElement('li');
-                    
-                    // Add class code styling along with completed check
-                    const classStyle = task.status === 'Completed' ? 'done' : `class-${task.classCode.toLowerCase()}`;
-                    li.className = `task-item ${classStyle}`;
-                    
-                    li.innerHTML = `
-                    <div>
-                        <span class="task-badge">${task.classCode !== 'DEFAULT' ? task.classCode : 'General'}</span>
-                        <span class="task-title">${task.title}</span>
-                    </div>
-                    <span class="task-date" style="color: black;"><strong>${new Date(task.start).toLocaleDateString()}</strong></span>
-                    `;
-                    li.onclick = () => toggleTaskStatus(task.id);
-                    taskListEl.appendChild(li);
-                });
-                });
-        }
+    // Load side list view
+    function loadTaskList() {
+        fetch('/api/tasks')
+            .then(res => res.json())
+            .then(events => {
+            taskListEl.innerHTML = '';
+            events.forEach(task => {
+                const li = document.createElement('li');
+                
+                const classStyle = task.status === 'Completed' ? 'done' : `class-${task.classCode.toLowerCase()}`;
+                li.className = `task-item ${classStyle}`;
+                
+                li.innerHTML = `
+                <div>
+                    <span class="task-badge">${task.classCode !== 'DEFAULT' ? task.classCode : 'General'}</span>
+                    <span class="task-title">${task.title}</span>
+                </div>
+                <span class="task-date" style="color: black;"><strong>${new Date(task.start).toLocaleDateString()}</strong></span>
+                `;
+                li.onclick = () => toggleTaskStatus(task.id);
+                taskListEl.appendChild(li);
+            });
+            });
+    }
 
-        function toggleTaskStatus(uid) {
-          fetch('/api/tasks/toggle', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ uid: uid })
-          })
-          .then(res => res.json())
-          .then(data => {
-            if (data.success) {
-              calendar.refetchEvents();
-              loadTaskList();
-            }
-          });
-        }
-
-        // Initial sidebar load
-        loadTaskList();
-
-        // Refresh data every 5 minutes automatically
-        setInterval(() => {
+    function toggleTaskStatus(uid) {
+      fetch('/api/tasks/toggle', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ uid: uid })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
           calendar.refetchEvents();
           loadTaskList();
-        }, 300000);
+        }
       });
-    </script>
+    }
+
+    // Initial sidebar load
+    loadTaskList();
+
+    // Refresh data every 5 minutes automatically
+    setInterval(() => {
+      calendar.refetchEvents();
+      loadTaskList();
+    }, 300000);
+  });
+</script>
 </body>
 </html>
