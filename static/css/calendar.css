@@ -6,30 +6,32 @@
 }
 
 body {
-    background-color: #f4f6f8;
-    color: #333;
+    background-color: #0f172a; /* Dark Navy Background */
+    color: #f1f5f9;
 }
 
+/* --- NAVBAR --- */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #1e293b;
     padding: 15px 30px;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #334155;
 }
 
 .navbar h1 {
     font-size: 1.25rem;
-    color: #1a202c;
+    color: #f8fafc;
 }
 
 #sync-status {
     font-size: 0.85rem;
-    color: #38a169;
+    color: #4ade80;
     font-weight: 600;
 }
 
+/* --- LAYOUT CONTAINER & CARDS --- */
 .container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -40,19 +42,22 @@ body {
 }
 
 .calendar-card, .sidebar-card {
-    background: #ffffff;
+    background: #1e293b;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+    border: 1px solid #334155;
 }
 
 .sidebar-card h2 {
     font-size: 1.1rem;
     margin-bottom: 15px;
-    border-bottom: 2px solid #edf2f7;
+    border-bottom: 2px solid #334155;
     padding-bottom: 8px;
+    color: #f8fafc;
 }
 
+/* --- SIDEBAR TASK LIST --- */
 #task-list {
     list-style: none;
     max-height: 600px;
@@ -65,37 +70,38 @@ body {
     align-items: center;
     padding: 10px 12px;
     margin-bottom: 8px;
-    background-color: #f8fafc;
-    border-left: 4px solid #3182ce;
+    background-color: #0f172a;
+    border-left: 4px solid #3b82f6;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 .task-item:hover {
-    background-color: #edf2f7;
+    background-color: #334155;
 }
 
 .task-item.done {
-    border-left-color: #a0aec0 !important;
-    opacity: 0.6;
+    border-left-color: #64748b !important;
+    opacity: 0.5;
 }
 
 .task-item.done .task-title {
     text-decoration: line-through;
+    color: #94a3b8;
 }
 
 .task-title {
     font-size: 0.9rem;
     font-weight: 500;
+    color: #f1f5f9;
 }
 
 .task-date {
     font-size: 0.75rem;
-    color: #718096;
+    color: #94a3b8 !important;
 }
 
-/* --- TASK TAG / BADGE STYLING --- */
 .task-badge {
     display: inline-block;
     font-size: 0.7rem;
@@ -107,21 +113,71 @@ body {
     text-transform: uppercase;
 }
 
+/* --- FULLCALENDAR DARK THEME OVERRIDES --- */
+.fc {
+    color: #f1f5f9;
+}
+
+.fc-theme-standard td, 
+.fc-theme-standard th, 
+.fc-theme-standard .fc-scrollgrid {
+    border-color: #334155 !important;
+}
+
+/* Header toolbar text & buttons */
+.fc .fc-toolbar-title {
+    color: #f8fafc;
+}
+
+.fc .fc-button-primary {
+    background-color: #334155 !important;
+    border-color: #475569 !important;
+    color: #f8fafc !important;
+}
+
+.fc .fc-button-primary:hover {
+    background-color: #475569 !important;
+}
+
+.fc .fc-button-primary:disabled {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+    color: #64748b !important;
+}
+
+/* Day grid and time slot text */
+.fc .fc-col-header-cell-cushion,
+.fc .fc-daygrid-day-number,
+.fc .fc-timegrid-axis-cushion,
+.fc .fc-timegrid-slot-label-cushion {
+    color: #cbd5e1;
+}
+
+.fc .fc-day-today {
+    background-color: rgba(51, 65, 85, 0.4) !important;
+}
+
+/* Time slot line highlights */
+.fc .fc-timegrid-slot {
+    background-color: transparent;
+    border-bottom: 1px solid #1e293b !important;
+}
+
 /* ==========================================================================
-   CLASS 1: EAS-1601-Lab-All-Sections (Habitable Planet Lab) - Teal
+   CLASS 1: EAS-1601-Lab-All-Sections (Habitable Planet Lab) - Dark Teal
    ========================================================================== */
 .class-eas-1601--all-lab-sections {
     background-color: #0d9488 !important;
-    border-color: #0f766e !important;
+    border-color: #14b8a6 !important;
     color: #ffffff !important;
 }
 .task-item.class-eas-1601--all-lab-sections {
-    background-color: #f0fdfa;
-    border-left-color: #0d9488;
+    background-color: #134e4a;
+    border-left-color: #14b8a6;
 }
 .task-item.class-eas-1601--all-lab-sections .task-badge {
-    background-color: #ccfbf1;
-    color: #0f766e;
+    background-color: #115e59;
+    color: #2dd4bf;
 }
 
 /* ==========================================================================
@@ -129,16 +185,16 @@ body {
    ========================================================================== */
 .class-isye-2027-b {
     background-color: #16a34a !important;
-    border-color: #15803d !important;
+    border-color: #22c55e !important;
     color: #ffffff !important;
 }
 .task-item.class-isye-2027-b {
-    background-color: #f0fdf4;
-    border-left-color: #16a34a;
+    background-color: #14532d;
+    border-left-color: #22c55e;
 }
 .task-item.class-isye-2027-b .task-badge {
-    background-color: #dcfce7;
-    color: #15803d;
+    background-color: #166534;
+    color: #4ade80;
 }
 
 /* ==========================================================================
@@ -146,16 +202,16 @@ body {
    ========================================================================== */
 .class-math-1553 {
     background-color: #2563eb !important;
-    border-color: #1d4ed8 !important;
+    border-color: #3b82f6 !important;
     color: #ffffff !important;
 }
 .task-item.class-math-1553 {
-    background-color: #eff6ff;
-    border-left-color: #2563eb;
+    background-color: #1e3a8a;
+    border-left-color: #3b82f6;
 }
 .task-item.class-math-1553 .task-badge {
-    background-color: #dbeafe;
-    color: #1d4ed8;
+    background-color: #1e40af;
+    color: #60a5fa;
 }
 
 /* ==========================================================================
@@ -163,16 +219,16 @@ body {
    ========================================================================== */
 .class-cs-2316-b {
     background-color: #9333ea !important;
-    border-color: #7e22ce !important;
+    border-color: #a855f7 !important;
     color: #ffffff !important;
 }
 .task-item.class-cs-2316-b {
-    background-color: #faf5ff;
-    border-left-color: #9333ea;
+    background-color: #581c87;
+    border-left-color: #a855f7;
 }
 .task-item.class-cs-2316-b .task-badge {
-    background-color: #f3e8ff;
-    color: #7e22ce;
+    background-color: #6b21a8;
+    color: #c084fc;
 }
 
 /* ==========================================================================
@@ -180,28 +236,29 @@ body {
    ========================================================================== */
 .class-eas-1601-a {
     background-color: #d97706 !important;
-    border-color: #b45309 !important;
+    border-color: #f59e0b !important;
     color: #ffffff !important;
 }
 .task-item.class-eas-1601-a {
-    background-color: #fffbeb;
-    border-left-color: #d97706;
+    background-color: #78350f;
+    border-left-color: #f59e0b;
 }
 .task-item.class-eas-1601-a .task-badge {
-    background-color: #fef3c7;
-    color: #b45309;
+    background-color: #92400e;
+    color: #fbbf24;
 }
 
 /* Default / General Class Styling */
 .class-default {
-    background-color: #64748b !important;
-    border-color: #475569 !important;
+    background-color: #475569 !important;
+    border-color: #64748b !important;
     color: #ffffff !important;
 }
 
 /* Completed Task Override */
 .completed-task {
-    background-color: #cbd5e0 !important;
-    border-color: #a0aec0 !important;
+    background-color: #334155 !important;
+    border-color: #475569 !important;
+    color: #94a3b8 !important;
     text-decoration: line-through;
 }
