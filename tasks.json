@@ -75,7 +75,7 @@
         "uid": "event-assignment-2459862",
         "title": "Pre-Lab Quiz 1 (Universe to Stars) [EAS-1601- All Lab Sections]",
         "start": "2026-09-01T12:00:00+00:00",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-calendar-event-5228369": {
         "uid": "event-calendar-event-5228369",
@@ -405,19 +405,19 @@
         "uid": "event-assignment-2620080",
         "title": "Color - Training [EAS-1601- All Lab Sections]",
         "start": "2026-09-13",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2626896": {
         "uid": "event-assignment-2626896",
         "title": "Color - Training [EAS-1601- All Lab Sections]",
         "start": "2026-09-13",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2589108": {
         "uid": "event-assignment-2589108",
         "title": "Lab 2 Attendance [EAS-1601- All Lab Sections]",
         "start": "2026-09-13",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-calendar-event-5254291": {
         "uid": "event-calendar-event-5254291",
@@ -429,25 +429,25 @@
         "uid": "event-assignment-2559560",
         "title": "Lecture 6: Requests and APIs [CS-2316-B]",
         "start": "2026-09-14",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2559672": {
         "uid": "event-assignment-2559672",
         "title": "lecture6 Coding [CS-2316-B]",
         "start": "2026-09-14",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2632780": {
         "uid": "event-assignment-2632780",
         "title": "Quiz 1 [ISYE-2027-B]",
         "start": "2026-09-14",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2459866": {
         "uid": "event-assignment-2459866",
         "title": "Pre-Lab Quiz 3 (Crafting the Elements) [EAS-1601- All Lab Sections]",
         "start": "2026-09-15T12:00:00+00:00",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-calendar-event-5228377": {
         "uid": "event-calendar-event-5228377",
@@ -465,7 +465,7 @@
         "uid": "event-calendar-event-5225517",
         "title": "Habitable Planet - EAS-1601-A [EAS-1601-A]",
         "start": "2026-09-15T18:00:00+00:00",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-calendar-event-5226133": {
         "uid": "event-calendar-event-5226133",
@@ -477,7 +477,7 @@
         "uid": "event-assignment-2632102",
         "title": "Lecture 6 - Polls 1 & 2 [EAS-1601-A]",
         "start": "2026-09-15T19:15:00+00:00",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-calendar-event-5254575": {
         "uid": "event-calendar-event-5254575",
@@ -489,25 +489,25 @@
         "uid": "event-calendar-event-5295989",
         "title": "LTP/Bayes Rule Review Session [ISYE-2027-B]",
         "start": "2026-09-16T21:00:00+00:00",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2559594": {
         "uid": "event-assignment-2559594",
         "title": "Lecture 7 Miniquiz - Regex Tracing [CS-2316-B]",
         "start": "2026-09-16",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2559674": {
         "uid": "event-assignment-2559674",
         "title": "lecture7 Coding [CS-2316-B]",
         "start": "2026-09-16",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2565136": {
         "uid": "event-assignment-2565136",
         "title": "2.1+2.2 Vectors and vector equation [MATH 1553]",
         "start": "2026-09-16",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-calendar-event-5228379": {
         "uid": "event-calendar-event-5228379",
@@ -537,55 +537,55 @@
         "uid": "event-assignment-2634580",
         "title": "Lecture 7 - Polls 1 & 2 [EAS-1601-A]",
         "start": "2026-09-17T19:15:00+00:00",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-override-496156": {
         "uid": "event-assignment-override-496156",
         "title": "Lab 3: Crafting the Elements (202608/EAS/1601/R3/88797) [EAS-1601- All Lab Sections]",
         "start": "2026-09-17T22:30:00+00:00",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-calendar-event-5295993": {
         "uid": "event-calendar-event-5295993",
         "title": "Practice Quiz 2 Review Session [ISYE-2027-B]",
         "start": "2026-09-18T16:00:00+00:00",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2559620": {
         "uid": "event-assignment-2559620",
         "title": "HW02 - File I/O & CSV Module [CS-2316-B]",
         "start": "2026-09-18",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2639836": {
         "uid": "event-assignment-2639836",
         "title": "Participation Week 4 [ISYE-2027-B]",
         "start": "2026-09-18",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2565420": {
         "uid": "event-assignment-2565420",
         "title": "Quiz 3 [MATH 1553]",
         "start": "2026-09-18",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2620696": {
         "uid": "event-assignment-2620696",
         "title": "Elements - Training [EAS-1601- All Lab Sections]",
         "start": "2026-09-20",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2632040": {
         "uid": "event-assignment-2632040",
         "title": "Elements - Training [EAS-1601- All Lab Sections]",
         "start": "2026-09-20",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2589112": {
         "uid": "event-assignment-2589112",
         "title": "Lab 3 Attendance [EAS-1601- All Lab Sections]",
         "start": "2026-09-20",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-calendar-event-5292347": {
         "uid": "event-calendar-event-5292347",
@@ -2889,7 +2889,7 @@
         "uid": "event-assignment-2640584",
         "title": "Quiz 2 [ISYE-2027-B]",
         "start": "2026-09-24",
-        "status": "To Do"
+        "status": "Completed"
     },
     "event-assignment-2589114": {
         "uid": "event-assignment-2589114",
@@ -2901,6 +2901,30 @@
         "uid": "event-assignment-2621796",
         "title": "Transits - Training [EAS-1601- All Lab Sections]",
         "start": "2026-10-04",
+        "status": "To Do"
+    },
+    "event-assignment-2559566": {
+        "uid": "event-assignment-2559566",
+        "title": "Lecture 10 miniquiz - Numpy tracing [CS-2316-B]",
+        "start": "2026-09-28",
+        "status": "To Do"
+    },
+    "event-assignment-2559648": {
+        "uid": "event-assignment-2559648",
+        "title": "lecture10 Coding [CS-2316-B]",
+        "start": "2026-09-28",
+        "status": "To Do"
+    },
+    "event-assignment-2626230": {
+        "uid": "event-assignment-2626230",
+        "title": "Quiz 2 Fall 2026- Requires Respondus LockDown Browser [EAS-1601-A]",
+        "start": "2026-09-29T19:15:00+00:00",
+        "status": "To Do"
+    },
+    "event-assignment-override-499148": {
+        "uid": "event-assignment-override-499148",
+        "title": "Lab 4: Exoplanet Detection (202608/EAS/1601/R3/88797) [EAS-1601- All Lab Sections]",
+        "start": "2026-10-01T22:30:00+00:00",
         "status": "To Do"
     }
 }

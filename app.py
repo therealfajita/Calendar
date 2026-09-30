@@ -89,42 +89,6 @@ def save_tasks(tasks):
     with open(JSON_FILE, "w") as f:
         json.dump(tasks, f, indent=4)
 
-
-def sync_calendar():
-    """Fetches the external feed and updates tasks.json without losing custom data."""
-    try:
-        response = requests.get(FEED_URL, timeout=10)
-        cal = icalendar.Calendar.from_ical(response.content)
-
-        tasks = load_tasks()
-
-        for component in cal.walk():
-            if component.name == "VEVENT":
-                uid = str(component.get("uid"))
-                summary = str(component.get("summary"))
-                start = component.get("dtstart").dt
-
-                if isinstance(start, datetime):
-                    start_str = start.isoformat()
-                else:
-                    start_str = str(start)
-
-                # Preserve existing completion status if task already exists
-                existing_status = tasks.get(uid, {}).get("status", "To Do")
-
-                tasks[uid] = {
-                    "uid": uid,
-                    "title": summary,
-                    "start": start_str,
-                    "status": existing_status,
-                }
-
-        save_tasks(tasks)
-        print(f"[{datetime.now()}] Calendar feed synced successfully.")
-    except Exception as e:
-        print(f"Sync error: {e}")
-
-
 def background_sync_scheduler(interval_seconds=900):
     """Syncs the external feed every 15 minutes in the background."""
     while True:
@@ -144,21 +108,37 @@ def get_tasks():
     events = []
     start_of_week = get_start_of_current_week()
 
-    for item in tasks.values():
-        event_dt = parse_event_datetime(item["start"])
+    print(f"\n Total tasks in file: {len(tasks)}")
+    print(f" Start of Week Threshold: {start_of_week}")
 
-        # Filter out past week events when serving API
+    for item in tasks.values():
+        title = item.get("title", "")
+        event_dt = parse_event_datetime(item.get("start"))
+        status = item.get("status", "To Do")
+        is_completed = status == "Completed"
+
+        # Debug why it might be skipped:
+        if event_dt and event_dt < start_of_week:
+            print(f"--> SKIPPED: Date ({event_dt}) is before start of week ({start_of_week})")
+            continue
+
+        if "Office Hours" in title or "Lecture" in title:
+            print(f"--> SKIPPED: Office hours or Lecture rule")
+            continue
+
+        print(f"--> SUCCESS: Task sent to frontend!")
+
+        # Normal loop execution for all tasks
+        if event_dt and event_dt < start_of_week and is_completed:
+            continue
+
         if event_dt and event_dt < start_of_week:
             continue
 
-        title = item["title"]
-
-        #Skips lecture events
-        if title == "F26-9:30am Lecture [ISYE-2027-B]" or title == "Lecture [ISYE-2027-B]":
-            continue
-
-        #Skips Office hours
-        if "Office Hours" in title:
+        if "Office Hours" in title or title in [
+            "F26-9:30am Lecture [ISYE-2027-B]",
+            "Lecture [ISYE-2027-B]"
+        ]:
             continue
 
         match = re.search(CLASS_REGEX, title)
@@ -167,23 +147,16 @@ def get_tasks():
         else:
             class_code = "DEFAULT"
 
-        status = item.get("status", "To Do")
-        is_completed = status == "Completed"
+        events.append({
+            "id": item["uid"],
+            "title": title,
+            "start": item["start"],
+            "status": status,
+            "classCode": class_code,
+            "className": "completed-task" if is_completed else f"class-{class_code.lower()}"
+        })
 
-        events.append(
-            {
-                "id": item["uid"],
-                "title": title,
-                "start": item["start"],
-                "status": status,
-                "classCode": class_code,
-                "className": (
-                    "completed-task"
-                    if is_completed
-                    else f"class-{class_code.lower()}"
-                ),
-            }
-        )
+        events.sort(key=lambda x: x["start"])
 
     return jsonify(events)
 
