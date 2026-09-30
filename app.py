@@ -34,8 +34,11 @@ def parse_event_datetime(dt_val):
     return None
 
 
+# Regex to extract class code inside brackets
+CLASS_REGEX = r"\[([A-Za-z0-9\s-]+)\]"
+
 def sync_calendar():
-    """Fetches the external feed and updates tasks.json, skipping events from past weeks."""
+    """Fetches the external feed and updates tasks.json."""
     try:
         response = requests.get(FEED_URL, timeout=10)
         cal = icalendar.Calendar.from_ical(response.content)
@@ -51,30 +54,35 @@ def sync_calendar():
 
                 event_dt = parse_event_datetime(dtstart)
 
-                # Skip events before Monday of the current week
                 if event_dt and event_dt < start_of_week:
                     continue
 
-                if isinstance(dtstart, (datetime, date)):
-                    start_str = dtstart.isoformat()
-                else:
-                    start_str = str(dtstart)
+                start_str = dtstart.isoformat() if isinstance(dtstart, (datetime, date)) else str(dtstart)
 
-                existing_status = tasks.get(uid, {}).get("status", "To Do")
+                # Extract class code for Subject
+                match = re.search(CLASS_REGEX, summary)
+                class_code = match.group(1).replace(" ", "-").upper() if match else ""
+
+                # Default status to "Not started" if not present
+                existing_status = tasks.get(uid, {}).get("status", "Not started")
 
                 tasks[uid] = {
                     "uid": uid,
                     "title": summary,
                     "start": start_str,
                     "status": existing_status,
+                    "subject": tasks.get(uid, {}).get("subject", class_code), # Default subject to associated class
+                    "priority": tasks.get(uid, {}).get("priority", ""),        # Default empty
+                    "taskType": tasks.get(uid, {}).get("taskType", ""),        # Default empty
+                    "effortLevel": tasks.get(uid, {}).get("effortLevel", "")   # Default empty
                 }
 
         save_tasks(tasks)
-        print(
-            f"[{datetime.now()}] Calendar feed synced successfully (filtered previous weeks)."
-        )
+        print(f"[{datetime.now()}] Calendar feed synced successfully.")
     except Exception as e:
         print(f"Sync error: {e}")
+
+
 
 def load_tasks():
     """Loads tasks from the local JSON file."""
@@ -101,6 +109,7 @@ def index():
     return render_template("calendar.html")
 
 
+
 CLASS_REGEX = r"\[([A-Za-z0-9\s-]+)\]"
 @app.route("/api/tasks", methods=["GET"])
 def get_tasks():
@@ -108,57 +117,54 @@ def get_tasks():
     events = []
     start_of_week = get_start_of_current_week()
 
-    print(f"\n Total tasks in file: {len(tasks)}")
-    print(f" Start of Week Threshold: {start_of_week}")
-
     for item in tasks.values():
         title = item.get("title", "")
         event_dt = parse_event_datetime(item.get("start"))
-        status = item.get("status", "To Do")
-        is_completed = status == "Completed"
-
-        # Debug why it might be skipped:
-        if event_dt and event_dt < start_of_week:
-            print(f"--> SKIPPED: Date ({event_dt}) is before start of week ({start_of_week})")
-            continue
-
-        if "Office Hours" in title or "Lecture" in title:
-            print(f"--> SKIPPED: Office hours or Lecture rule")
-            continue
-
-        print(f"--> SUCCESS: Task sent to frontend!")
-
-        # Normal loop execution for all tasks
-        if event_dt and event_dt < start_of_week and is_completed:
-            continue
 
         if event_dt and event_dt < start_of_week:
             continue
 
-        if "Office Hours" in title or title in [
-            "F26-9:30am Lecture [ISYE-2027-B]",
-            "Lecture [ISYE-2027-B]"
-        ]:
+        if "Office Hours" in title or title in ["F26-9:30am Lecture [ISYE-2027-B]", "Lecture [ISYE-2027-B]"]:
             continue
 
         match = re.search(CLASS_REGEX, title)
-        if match:
-            class_code = match.group(1).replace(" ", "-").upper()
-        else:
-            class_code = "DEFAULT"
+        class_code = match.group(1).replace(" ", "-").upper() if match else "DEFAULT"
+
+        # Auto-extract subject if empty
+        subject = item.get("subject") or (class_code if class_code != "DEFAULT" else "")
+        status = item.get("status", "Not started")
 
         events.append({
             "id": item["uid"],
             "title": title,
             "start": item["start"],
             "status": status,
+            "subject": subject,
+            "priority": item.get("priority", ""),
+            "taskType": item.get("taskType", ""),
+            "effortLevel": item.get("effortLevel", ""),
             "classCode": class_code,
-            "className": "completed-task" if is_completed else f"class-{class_code.lower()}"
+            "className": "completed-task" if status == "Completed" else f"class-{class_code.lower()}"
         })
 
-        events.sort(key=lambda x: x["start"])
-
+    events.sort(key=lambda x: x["start"])
     return jsonify(events)
+
+@app.route("/api/tasks/update", methods=["POST"])
+def update_task_property():
+    """Update custom editable properties for a task."""
+    data = request.json
+    uid = data.get("uid")
+    field = data.get("field")
+    value = data.get("value")
+
+    tasks = load_tasks()
+    if uid in tasks:
+        tasks[uid][field] = value
+        save_tasks(tasks)
+        return jsonify({"success": True}), 200
+
+    return jsonify({"error": "Task not found"}), 404
 
 
 @app.route("/api/tasks/toggle", methods=["POST"])
@@ -180,6 +186,9 @@ def toggle_task():
 
     return jsonify({"error": "Task not found"}), 404
 
+@app.route("/tasks")
+def tasks_page():
+    return render_template("tasks.html")
 
 if __name__ == "__main__":
     # Perform an initial sync upon running

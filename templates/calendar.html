@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Calendar Dashboard</title>
     <!-- Stylesheet -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/calendar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">
     <!-- FullCalendar Library -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
 </head>
 <body>
+  
 
     <header class="navbar">
         <h1>Task & Assignment Dashboard</h1>
         <span id="sync-status">Auto-Sync Active</span>
     </header>
+    <div class="table-container" style="padding-bottom: 0;">
+        <div class="view-nav">
+            <a href="/" class="active">📅 Calendar View</a>
+            <a href="/tasks">📋 All Tasks View</a>
+        </div>
+    </div>
 
     <div class="container">
         <!-- Main Calendar View -->

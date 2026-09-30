@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Database View</title>
+    <!-- Base Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/calendar.css') }}">
+    <!-- Task View Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">
+</head>
+<body>
+
+    <header class="navbar">
+        <h1>Task Database</h1>
+        <span id="sync-status">Auto-Sync Active</span>
+    </header>
+
+    <div class="table-container">
+        <div class="view-nav">
+            <a href="/">📅 Calendar View</a>
+            <a href="/tasks" class="active">📋 All Tasks View</a>
+        </div>
+
+        <table class="task-table">
+            <thead>
+                <tr>
+                    <th><span>Aa</span> Task name</th>
+                    <th><span>🔆</span> Status</th>
+                    <th><span>📅</span> Due date</th>
+                    <th><span>🔽</span> Priority</th>
+                    <th><span>📐</span> Subject</th>
+                    <th><span>📋</span> Task Type</th>
+                    <th><span>⏳</span> Effort level ℹ️</th>
+                </tr>
+            </thead>
+            <tbody id="task-table-body">
+                <!-- Dynamically populated -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const tableBody = document.getElementById('task-table-body');
+
+        function loadTasks() {
+          fetch('/api/tasks')
+            .then(res => res.json())
+            .then(tasks => {
+              tableBody.innerHTML = '';
+              tasks.forEach(task => {
+                const tr = document.createElement('tr');
+
+                tr.innerHTML = `
+                  <td class="task-title-cell">${task.title}</td>
+                  <td>
+                    <select onchange="updateProp('${task.id}', 'status', this.value)">
+                      <option value="Not started" ${task.status === 'Not started' ? 'selected' : ''}>Not started</option>
+                      <option value="In progress" ${task.status === 'In progress' ? 'selected' : ''}>In progress</option>
+                      <option value="Completed" ${task.status === 'Completed' ? 'selected' : ''}>Completed</option>
+                    </select>
+                  </td>
+                  <td class="due-date-cell">${new Date(task.start).toLocaleDateString()}</td>
+                  <td>
+                    <select onchange="updateProp('${task.id}', 'priority', this.value)">
+                      <option value="" ${!task.priority ? 'selected' : ''}></option>
+                      <option value="Low" ${task.priority === 'Low' ? 'selected' : ''}>Low</option>
+                      <option value="Medium" ${task.priority === 'Medium' ? 'selected' : ''}>Medium</option>
+                      <option value="High" ${task.priority === 'High' ? 'selected' : ''}>High</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input type="text" placeholder="" value="${task.subject || ''}" onchange="updateProp('${task.id}', 'subject', this.value)">
+                  </td>
+                  <td>
+                    <select onchange="updateProp('${task.id}', 'taskType', this.value)">
+                      <option value="" ${!task.taskType ? 'selected' : ''}></option>
+                      <option value="Assignment" ${task.taskType === 'Assignment' ? 'selected' : ''}>Assignment</option>
+                      <option value="Quiz" ${task.taskType === 'Quiz' ? 'selected' : ''}>Quiz</option>
+                      <option value="Exam" ${task.taskType === 'Exam' ? 'selected' : ''}>Exam</option>
+                      <option value="Reading" ${task.taskType === 'Reading' ? 'selected' : ''}>Reading</option>
+                      <option value="Project" ${task.taskType === 'Project' ? 'selected' : ''}>Project</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select onchange="updateProp('${task.id}', 'effortLevel', this.value)">
+                      <option value="" ${!task.effortLevel ? 'selected' : ''}></option>
+                      <option value="Low Effort" ${task.effortLevel === 'Low Effort' ? 'selected' : ''}>Low Effort</option>
+                      <option value="Medium Effort" ${task.effortLevel === 'Medium Effort' ? 'selected' : ''}>Medium Effort</option>
+                      <option value="High Effort" ${task.effortLevel === 'High Effort' ? 'selected' : ''}>High Effort</option>
+                    </select>
+                  </td>
+                `;
+                tableBody.appendChild(tr);
+              });
+            });
+        }
+
+        window.updateProp = function(uid, field, value) {
+          fetch('/api/tasks/update', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ uid: uid, field: field, value: value })
+          });
+        };
+
+        loadTasks();
+      });
+    </script>
+</body>
+</html>
