@@ -4389,9 +4389,9 @@
         "start": "2026-10-12",
         "status": "Completed",
         "subject": "CS-2316-B",
-        "priority": "",
+        "priority": "Medium",
         "taskType": "",
-        "effortLevel": ""
+        "effortLevel": "High Effort"
     },
     "event-assignment-2559568": {
         "uid": "event-assignment-2559568",
@@ -4529,7 +4529,7 @@
         "start": "2026-10-12",
         "status": "Completed",
         "subject": "CS-2316-B",
-        "priority": "",
+        "priority": "High",
         "taskType": "",
         "effortLevel": ""
     },
@@ -4539,7 +4539,7 @@
         "start": "2026-10-12",
         "status": "Completed",
         "subject": "CS-2316-B",
-        "priority": "",
+        "priority": "High",
         "taskType": "",
         "effortLevel": ""
     },

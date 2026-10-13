@@ -161,8 +161,32 @@ def determine_effort_level(task_type, title, class_code):
     if "EAS" in class_code_upper:
         return "Low Effort"
 
+    if "study" in title_lower:
+        return "High Effort"
+
     # Rule 5: All other assignments -> Medium effort
     return "Medium Effort"
+
+def determine_priority(event_dt):
+    """
+    Determines priority level based on the number of days until the due date.
+    - Due within 2 days: High priority
+    - Due within 3 to 5 days: Medium priority
+    - All other times: Low priority
+    """
+    if not event_dt:
+        return "Low"
+
+    today = date.today()
+    task_date = event_dt.date() if isinstance(event_dt, datetime) else event_dt
+    days_until_due = (task_date - today).days
+
+    if 0 <= days_until_due <= 2:
+        return "High"
+    elif 3 <= days_until_due <= 5:
+        return "Medium"
+    else:
+        return "Low"
 
 @app.route("/")
 def index():
@@ -201,14 +225,21 @@ def get_tasks():
         # Auto-detect Effort Level
         detected_effort = determine_effort_level(task_type, title, class_code)
         effort_level = item.get("effortLevel") or detected_effort
-        
+
+        # Auto-detect Priority based on Due Date
+        existing_priority = item.get("priority")
+        if status == "Completed" and existing_priority:
+            priority = existing_priority
+        else:
+            priority = existing_priority or determine_priority(event_dt)
+
         events.append({
             "id": item["uid"],
             "title": title,
             "start": item["start"],
             "status": status,
             "subject": subject,
-            "priority": item.get("priority", ""),
+            "priority": priority,
             "taskType": task_type,
             "effortLevel":effort_level,
             "classCode": class_code,
