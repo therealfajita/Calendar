@@ -103,6 +103,66 @@ def background_sync_scheduler(interval_seconds=900):
         sync_calendar()
         time.sleep(interval_seconds)
 
+def determine_task_type(title, class_code):
+    """
+    Determines the task type based on title keywords and class rules.
+    Returns None if the task is a Reading (so it can be filtered/deleted).
+    """
+    title_lower = title.lower()
+
+    # Priority rules for Project, Exam, Quiz
+    if "project" in title_lower:
+        return "Project"
+    
+    if "exam" in title_lower:
+        return "Exam"
+    
+    if "quiz" in title_lower:
+        return "Quiz"
+
+    if "review" in title_lower:
+        return "Study"
+
+    # Rule for Assignment
+    # - Anything with HW or Training
+    # - OR any MATH 1553 task that is not a Quiz or Exam
+    if "hw" in title_lower or "training" in title_lower or "coding" in title_lower or "polls" in title_lower:
+        return "Assignment"
+    
+    if "MATH" in class_code and "1553" in class_code:
+        return "Assignment"
+
+    if "EAS" in class_code and "1601" in class_code:
+            return "Assignment"
+
+    # Default empty for other unmatched tasks
+    return ""
+
+def determine_effort_level(task_type, title, class_code):
+    """
+    Determines effort level based on task type, title keywords, and class code.
+    """
+    title_lower = title.lower()
+    class_code_upper = class_code.upper()
+
+    # Rule 1: Exam or Quiz -> High effort
+    if task_type in ["Exam", "Quiz"]:
+        return "High Effort"
+
+    # Rule 2: CS HW -> High effort
+    if "CS" in class_code_upper and "hw" in title_lower:
+        return "High Effort"
+
+    # Rule 3: All other CS assignments -> Low effort
+    if "CS" in class_code_upper:
+        return "Low Effort"
+
+    # Rule 4: EAS assignments -> Low effort
+    if "EAS" in class_code_upper:
+        return "Low Effort"
+
+    # Rule 5: All other assignments -> Medium effort
+    return "Medium Effort"
 
 @app.route("/")
 def index():
@@ -124,7 +184,7 @@ def get_tasks():
         if event_dt and event_dt < start_of_week:
             continue
 
-        if "Office Hours" in title or title in ["F26-9:30am Lecture [ISYE-2027-B]", "Lecture [ISYE-2027-B]"]:
+        if "Office Hours" in title or "Attendance" in title or title in ["F26-9:30am Lecture [ISYE-2027-B]", "Lecture [ISYE-2027-B]","Habitable Planet - EAS-1601-A [EAS-1601-A]"]:
             continue
 
         match = re.search(CLASS_REGEX, title)
@@ -134,6 +194,14 @@ def get_tasks():
         subject = item.get("subject") or (class_code if class_code != "DEFAULT" else "")
         status = item.get("status", "Not started")
 
+        #Determines Task Type
+        detected_task_type = determine_task_type(title, class_code)
+        task_type = item.get("taskType") or detected_task_type
+
+        # Auto-detect Effort Level
+        detected_effort = determine_effort_level(task_type, title, class_code)
+        effort_level = item.get("effortLevel") or detected_effort
+        
         events.append({
             "id": item["uid"],
             "title": title,
@@ -141,8 +209,8 @@ def get_tasks():
             "status": status,
             "subject": subject,
             "priority": item.get("priority", ""),
-            "taskType": item.get("taskType", ""),
-            "effortLevel": item.get("effortLevel", ""),
+            "taskType": task_type,
+            "effortLevel":effort_level,
             "classCode": class_code,
             "className": "completed-task" if status == "Completed" else f"class-{class_code.lower()}"
         })
