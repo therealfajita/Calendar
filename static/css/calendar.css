@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #0f172a; /* Dark Navy Background */
+    background-color: #09122C; /* Site Background: Midnight Blue */
     color: #f1f5f9;
 }
 
@@ -15,9 +15,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1e293b;
+    background-color: #1E3E62; /* Calendar Background / Surface */
     padding: 15px 30px;
-    border-bottom: 1px solid #334155;
+    border-bottom: 1px solid #2B527A;
 }
 
 .navbar h1 {
@@ -27,7 +27,7 @@ body {
 
 #sync-status {
     font-size: 0.85rem;
-    color: #4ade80;
+    color: #10B981; /* Success Green */
     font-weight: 600;
 }
 
@@ -41,18 +41,26 @@ body {
     margin: 0 auto;
 }
 
-.calendar-card, .sidebar-card {
-    background: #1e293b;
+.calendar-card {
+    background: #1E3E62; /* Calendar Background: Steel Blue Surface */
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-    border: 1px solid #334155;
+    border: 1px solid #2B527A;
+}
+
+.sidebar-card {
+    background: #112240; /* Side Task Bar: Deep Marine Anchor */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+    border: 1px solid #1D3557;
 }
 
 .sidebar-card h2 {
     font-size: 1.1rem;
     margin-bottom: 15px;
-    border-bottom: 2px solid #334155;
+    border-bottom: 2px solid #1D3557;
     padding-bottom: 8px;
     color: #f8fafc;
 }
@@ -70,25 +78,25 @@ body {
     align-items: center;
     padding: 10px 12px;
     margin-bottom: 8px;
-    background-color: #0f172a;
-    border-left: 4px solid #3b82f6;
+    background-color: #09122C;
+    border-left: 4px solid #6366F1;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 .task-item:hover {
-    background-color: #334155;
+    background-color: #1A2B4C;
 }
 
 .task-item.done {
-    border-left-color: #64748b !important;
+    border-left-color: #475569 !important;
     opacity: 0.5;
 }
 
 .task-item.done .task-title {
     text-decoration: line-through;
-    color: #94a3b8;
+    color: #94A3B8;
 }
 
 .task-title {
@@ -99,7 +107,7 @@ body {
 
 .task-date {
     font-size: 0.75rem;
-    color: #94a3b8 !important;
+    color: #94A3B8 !important;
 }
 
 .task-badge {
@@ -121,7 +129,7 @@ body {
 .fc-theme-standard td, 
 .fc-theme-standard th, 
 .fc-theme-standard .fc-scrollgrid {
-    border-color: #334155 !important;
+    border-color: #2B527A !important;
 }
 
 /* Header toolbar text & buttons */
@@ -130,19 +138,19 @@ body {
 }
 
 .fc .fc-button-primary {
-    background-color: #334155 !important;
-    border-color: #475569 !important;
+    background-color: #2B527A !important;
+    border-color: #3B6B9C !important;
     color: #f8fafc !important;
 }
 
 .fc .fc-button-primary:hover {
-    background-color: #475569 !important;
+    background-color: #3B6B9C !important;
 }
 
 .fc .fc-button-primary:disabled {
-    background-color: #1e293b !important;
-    border-color: #334155 !important;
-    color: #64748b !important;
+    background-color: #1E3E62 !important;
+    border-color: #2B527A !important;
+    color: #64748B !important;
 }
 
 /* Day grid and time slot text */
@@ -150,115 +158,240 @@ body {
 .fc .fc-daygrid-day-number,
 .fc .fc-timegrid-axis-cushion,
 .fc .fc-timegrid-slot-label-cushion {
-    color: #cbd5e1;
+    color: #CBD5E1;
 }
 
 .fc .fc-day-today {
-    background-color: rgba(51, 65, 85, 0.4) !important;
+    background-color: rgba(99, 102, 241, 0.2) !important;
 }
 
 /* Time slot line highlights */
 .fc .fc-timegrid-slot {
     background-color: transparent;
-    border-bottom: 1px solid #1e293b !important;
+    border-bottom: 1px solid #1E3E62 !important;
 }
 
 /* ==========================================================================
-   CLASS 1: EAS-1601-Lab-All-Sections (Habitable Planet Lab) - Dark Teal
+   GROUP 1: Indigo Blue (#6366F1) - EAS-1601 Lab
    ========================================================================== */
 .class-eas-1601--all-lab-sections {
-    background-color: #0d9488 !important;
-    border-color: #14b8a6 !important;
+    background-color: #6366F1 !important;
+    border-color: #818CF8 !important;
     color: #ffffff !important;
 }
 .task-item.class-eas-1601--all-lab-sections {
-    background-color: #134e4a;
-    border-left-color: #14b8a6;
+    background-color: #131738;
+    border-left-color: #6366F1;
 }
 .task-item.class-eas-1601--all-lab-sections .task-badge {
-    background-color: #115e59;
-    color: #2dd4bf;
+    background-color: #252861;
+    color: #A5B4FC;
 }
 
 /* ==========================================================================
-   CLASS 2: ISYE-2027-B (Probability With Apps) - Emerald Green
+   GROUP 2: Ocean Cyan (#0EA5E9) - ISYE-2027-B
    ========================================================================== */
 .class-isye-2027-b {
-    background-color: #16a34a !important;
-    border-color: #22c55e !important;
+    background-color: #0EA5E9 !important;
+    border-color: #38BDF8 !important;
     color: #ffffff !important;
 }
 .task-item.class-isye-2027-b {
-    background-color: #14532d;
-    border-left-color: #22c55e;
+    background-color: #0B2236;
+    border-left-color: #0EA5E9;
 }
 .task-item.class-isye-2027-b .task-badge {
-    background-color: #166534;
-    color: #4ade80;
+    background-color: #134261;
+    color: #7DD3FC;
 }
 
 /* ==========================================================================
-   CLASS 3: MATH-1553 (Intro to Linear Algebra) - Royal Blue
+   GROUP 3: Success Green (#10B981) - MATH-1553
    ========================================================================== */
 .class-math-1553 {
-    background-color: #2563eb !important;
-    border-color: #3b82f6 !important;
+    background-color: #10B981 !important;
+    border-color: #34D399 !important;
     color: #ffffff !important;
 }
 .task-item.class-math-1553 {
-    background-color: #1e3a8a;
-    border-left-color: #3b82f6;
+    background-color: #0B261D;
+    border-left-color: #10B981;
 }
 .task-item.class-math-1553 .task-badge {
-    background-color: #1e40af;
-    color: #60a5fa;
+    background-color: #144D3A;
+    color: #6EE7B7;
 }
 
 /* ==========================================================================
-   CLASS 4: CS-2316-B (Data Input and Manipulation) - Purple
-   ========================================================================== */
-.class-cs-2316-b {
-    background-color: #9333ea !important;
-    border-color: #a855f7 !important;
-    color: #ffffff !important;
+   GROUP 4: Warning Amber (#F59E0B) - CS
+========================================================================== */
+   .class-cs-2316-b {
+    background-color: #B7410E !important;
+    border-color: #B7410E !important;
+    color: #121212 !important;
 }
 .task-item.class-cs-2316-b {
-    background-color: #581c87;
-    border-left-color: #a855f7;
+    background-color: #2C210E;
+    border-left-color: #B7410E;
 }
 .task-item.class-cs-2316-b .task-badge {
-    background-color: #6b21a8;
-    color: #c084fc;
+    background-color: #523B12;
+    color: #B7410E;
 }
 
 /* ==========================================================================
-   CLASS 5: EAS-1601-A (Habitable Planet Lecture) - Amber / Coral
+   GROUP 5: Deep Pink (#EC4899) - EAS-1601-A
    ========================================================================== */
 .class-eas-1601-a {
-    background-color: #d97706 !important;
-    border-color: #f59e0b !important;
+    background-color: #EC4899 !important;
+    border-color: #F472B6 !important;
     color: #ffffff !important;
 }
 .task-item.class-eas-1601-a {
-    background-color: #78350f;
-    border-left-color: #f59e0b;
+    background-color: #2B1220;
+    border-left-color: #EC4899;
 }
 .task-item.class-eas-1601-a .task-badge {
-    background-color: #92400e;
-    color: #fbbf24;
+    background-color: #571C3D;
+    color: #FBCFE8;
 }
 
 /* Default / General Class Styling */
 .class-default {
-    background-color: #475569 !important;
-    border-color: #64748b !important;
+    background-color: #3B6B9C !important;
+    border-color: #4A7BAE !important;
     color: #ffffff !important;
 }
 
 /* Completed Task Override */
 .completed-task {
-    background-color: #334155 !important;
-    border-color: #475569 !important;
-    color: #94a3b8 !important;
+    background-color: #1A2B4C !important;
+    border-color: #2B527A !important;
+    color: #94A3B8 !important;
     text-decoration: line-through;
+}
+
+/* --- CLICK-TO-CREATE ON CALENDAR DAYS --- */
+.fc .fc-daygrid-day,
+.fc .fc-timegrid-slot-lane {
+    cursor: pointer;
+}
+
+.fc .fc-daygrid-day:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* --- NEW TASK MODAL --- */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(9, 18, 44, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+/* `display: flex` above would otherwise override the hidden attribute */
+.modal-backdrop[hidden] {
+    display: none;
+}
+
+.modal-card {
+    background: #1E3E62;
+    border: 1px solid #2B527A;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 100%;
+    max-width: 480px;
+}
+
+.modal-card h3 {
+    font-size: 1.1rem;
+    color: #f8fafc;
+}
+
+.modal-subtitle {
+    font-size: 0.85rem;
+    color: #CBD5E1;
+    margin: 4px 0 16px;
+}
+
+.modal-card label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #CBD5E1;
+    margin-bottom: 4px;
+}
+
+.modal-card input,
+.modal-card select {
+    width: 100%;
+    background: #09122C;
+    border: 1px solid #2B527A;
+    color: #f1f5f9;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.modal-card input:focus,
+.modal-card select:focus {
+    outline: none;
+    border-color: #6366F1;
+}
+
+.modal-card input {
+    margin-bottom: 12px;
+}
+
+.modal-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.modal-error {
+    color: #F87171;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.btn-primary,
+.btn-secondary {
+    border: none;
+    padding: 6px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #6366F1;
+    color: #ffffff;
+}
+
+.btn-primary:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #CBD5E1;
+    border: 1px solid #2B527A;
+}
+
+.btn-secondary:hover {
+    background: #2B527A;
 }

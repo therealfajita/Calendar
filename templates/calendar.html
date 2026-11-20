@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Calendar Dashboard</title>
-    <!-- Stylesheet -->
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/calendar.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">
-    <!-- FullCalendar Library -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
 </head>
 <body>
-  
-
     <header class="navbar">
         <h1>Task & Assignment Dashboard</h1>
         <span id="sync-status">Auto-Sync Active</span>
@@ -26,94 +21,68 @@
     </div>
 
     <div class="container">
-        <!-- Main Calendar View -->
         <main class="calendar-card">
             <div id="calendar"></div>
         </main>
-
-        <!-- Sidebar Task Tracker -->
         <aside class="sidebar-card">
             <h2>Upcoming Tasks</h2>
             <ul id="task-list"></ul>
         </aside>
     </div>
 
-    <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-    var taskListEl = document.getElementById('task-list');
+    <!-- New Task Modal (opened by clicking a day on the calendar) -->
+    <div id="new-task-modal" class="modal-backdrop" hidden>
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="new-task-modal-title">
+            <h3 id="new-task-modal-title">New Task</h3>
+            <p class="modal-subtitle">Due <strong id="new-task-date-label"></strong></p>
+            <form id="calendar-task-form">
+                <label for="calendar-task-title">Task name</label>
+                <input type="text" id="calendar-task-title" placeholder="e.g. HW 5 [CS 2316 B]" required autocomplete="off">
 
-    // Initialize FullCalendar with Month, Week, and Day views + Time Grid
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth',
-      headerToolbar: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay'
-      },
-      // Time grid configuration (shows times like Google Calendar)
-      slotMinTime: '06:00:00', // Start time slot (e.g., 6:00 AM)
-      slotMaxTime: '23:00:00', // End time slot (e.g., 11:00 PM)
-      slotDuration: '00:30:00', // 30-minute intervals
-      allDaySlot: true, // Show all-day events header row
-      nowIndicator: true, // Red line indicating current time
-      events: '/api/tasks',
-      eventClick: function(info) {
-        toggleTaskStatus(info.event.id);
-      }
-    });
-
-    calendar.render();
-
-    // Load side list view
-    function loadTaskList() {
-        fetch('/api/tasks')
-            .then(res => res.json())
-            .then(events => {
-            taskListEl.innerHTML = '';
-            events.forEach(task => {
-                const li = document.createElement('li');
-                
-                const classStyle = task.status === 'Completed' ? 'done' : `class-${task.classCode.toLowerCase()}`;
-                li.className = `task-item ${classStyle}`;
-                
-                li.innerHTML = `
-                <div>
-                    <span class="task-badge">${task.classCode !== 'DEFAULT' ? task.classCode : 'General'}</span>
-                    <span class="task-title">${task.title}</span>
+                <div class="modal-row">
+                    <div>
+                        <label for="calendar-task-type">Task Type</label>
+                        <select id="calendar-task-type">
+                            <option value="">Auto</option>
+                            <option value="Assignment">Assignment</option>
+                            <option value="Quiz">Quiz</option>
+                            <option value="Exam">Exam</option>
+                            <option value="Study">Study</option>
+                            <option value="Project">Project</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="calendar-task-priority">Priority</label>
+                        <select id="calendar-task-priority">
+                            <option value="">Auto</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="calendar-task-effort">Effort level</label>
+                        <select id="calendar-task-effort">
+                            <option value="">Auto</option>
+                            <option value="Low Effort">Low Effort</option>
+                            <option value="Medium Effort">Medium Effort</option>
+                            <option value="High Effort">High Effort</option>
+                        </select>
+                    </div>
                 </div>
-                <span class="task-date" style="color: black;"><strong>${new Date(task.start).toLocaleDateString()}</strong></span>
-                `;
-                li.onclick = () => toggleTaskStatus(task.id);
-                taskListEl.appendChild(li);
-            });
-            });
-    }
 
-    function toggleTaskStatus(uid) {
-      fetch('/api/tasks/toggle', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ uid: uid })
-      })
-      .then(res => res.json())
-      .then(data => {
-        if (data.success) {
-          calendar.refetchEvents();
-          loadTaskList();
-        }
-      });
-    }
+                <p id="calendar-task-error" class="modal-error" hidden></p>
 
-    // Initial sidebar load
-    loadTaskList();
+                <div class="modal-actions">
+                    <button type="button" id="calendar-task-cancel" class="btn-secondary">Cancel</button>
+                    <button type="submit" class="btn-primary">Add Task</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
-    // Refresh data every 5 minutes automatically
-    setInterval(() => {
-      calendar.refetchEvents();
-      loadTaskList();
-    }, 300000);
-  });
-</script>
+    <!-- External Script -->
+    <script src="{{ url_for('static', filename='js/calendar.js') }}"></script>
+</body>
 </body>
 </html>

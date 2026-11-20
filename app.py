@@ -7,6 +7,7 @@ from flask import Flask, jsonify, render_template, request
 import icalendar
 import requests
 import re
+import uuid
 
 app = Flask(__name__)
 
@@ -192,6 +193,8 @@ def determine_priority(event_dt):
 def index():
     return render_template("calendar.html")
 
+import uuid
+
 
 
 CLASS_REGEX = r"\[([A-Za-z0-9\s-]+)\]"
@@ -284,6 +287,37 @@ def toggle_task():
         ), 200
 
     return jsonify({"error": "Task not found"}), 404
+
+@app.route("/api/tasks/create", methods=["POST"])
+def create_task():
+    """Create a new manual task."""
+    data = request.json
+    title = data.get("title")
+    due_date = data.get("start")
+
+    if not title or not due_date:
+        return jsonify({"error": "Title and due date are required"}), 400
+
+    uid = str(uuid.uuid4())
+    tasks = load_tasks()
+
+    # Extract class code if present in the title
+    match = re.search(CLASS_REGEX, title)
+    class_code = match.group(1).replace(" ", "-").upper() if match else ""
+
+    tasks[uid] = {
+        "uid": uid,
+        "title": title,
+        "start": due_date,
+        "status": "Not started",
+        "subject": class_code,
+        "priority": data.get("priority", ""),
+        "taskType": data.get("taskType", ""),
+        "effortLevel": data.get("effortLevel", "")
+    }
+
+    save_tasks(tasks)
+    return jsonify({"success": True, "uid": uid}), 201
 
 @app.route("/tasks")
 def tasks_page():

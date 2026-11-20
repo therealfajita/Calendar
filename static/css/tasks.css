@@ -12,57 +12,57 @@
 }
 
 .view-nav a {
-    color: #94a3b8;
+    color: #94A3B8;
     text-decoration: none;
     padding: 8px 16px;
     border-radius: 6px;
-    background: #1e293b;
+    background: #1E3E62; /* Steel Blue Surface */
     font-size: 0.9rem;
-    border: 1px solid #334155;
+    border: 1px solid #2B527A;
     transition: background 0.2s ease, color 0.2s ease;
 }
 
 .view-nav a:hover {
-    background: #334155;
+    background: #2B527A;
     color: #f8fafc;
 }
 
 .view-nav a.active {
     color: #f8fafc;
-    background: #334155;
-    border-color: #475569;
+    background: #2B527A;
+    border-color: #3B6B9C;
 }
 
 /* Database Table */
 .task-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #1e293b;
+    background-color: #1E3E62; /* Steel Blue Surface */
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-    border: 1px solid #334155;
+    border: 1px solid #2B527A;
 }
 
 .task-table th, 
 .task-table td {
     padding: 12px 16px;
     text-align: left;
-    border-bottom: 1px solid #334155;
+    border-bottom: 1px solid #2B527A;
     font-size: 0.88rem;
 }
 
 .task-table th {
-    background-color: #0f172a;
-    color: #cbd5e1;
+    background-color: #09122C; /* Midnight Blue */
+    color: #38BDF8; /* Accent Cyan */
     font-weight: 600;
 }
 
 /* Form Controls Inside Table Cells */
 .task-table select, 
 .task-table input {
-    background: #0f172a;
-    border: 1px solid #334155;
+    background: #09122C;
+    border: 1px solid #2B527A;
     color: #f1f5f9;
     padding: 6px 10px;
     border-radius: 4px;
@@ -74,7 +74,7 @@
 
 .task-table select:focus, 
 .task-table input:focus {
-    border-color: #3b82f6;
+    border-color: #6366F1; /* Indigo Blue focus glow */
 }
 
 .task-title-cell {
@@ -83,6 +83,6 @@
 }
 
 .due-date-cell {
-    color: #94a3b8;
+    color: #94A3B8;
     font-weight: 500;
 }
