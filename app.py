@@ -4,16 +4,70 @@ import threading
 import time
 from datetime import date, datetime, timedelta
 from flask import Flask, jsonify, render_template, request
+import click
 import icalendar
 import requests
 import re
 import uuid
+from sqlalchemy import Column, MetaData, String, Table, Text, create_engine, select, update
+from sqlalchemy.dialects.postgresql import insert as pg_insert
+from sqlalchemy.dialects.sqlite import insert as sqlite_insert
 
 app = Flask(__name__)
 
-# REPLACE WITH YOUR ACTUAL ICAL/URL FEED
-FEED_URL = "https://gatech.instructure.com/feeds/calendars/user_ZwmEaflRhKApN4Nah3ijlSpy2QTYELYfBXKl8Cw2.ics"
-JSON_FILE = "tasks.json"
+# iCal feed URL. Keep this out of source control: it contains a private token.
+# Set it as the FEED_URL environment variable (Render dashboard -> Environment).
+FEED_URL = os.environ.get("FEED_URL", "")
+
+
+# ---------------------------------------------------------------------------
+# Database
+# ---------------------------------------------------------------------------
+# On Render, DATABASE_URL is provided by the linked Postgres database.
+# Locally it falls back to a SQLite file so the app runs without Postgres.
+def _database_url():
+    url = os.environ.get("DATABASE_URL", "sqlite:///tasks.db")
+    # SQLAlchemy needs an explicit driver name for psycopg 3
+    if url.startswith("postgres://"):
+        url = "postgresql+psycopg://" + url[len("postgres://"):]
+    elif url.startswith("postgresql://"):
+        url = "postgresql+psycopg://" + url[len("postgresql://"):]
+    return url
+
+
+engine = create_engine(_database_url(), pool_pre_ping=True, future=True)
+metadata = MetaData()
+
+tasks_table = Table(
+    "tasks",
+    metadata,
+    Column("uid", String(255), primary_key=True),
+    Column("title", Text, nullable=False, default=""),
+    Column("start", String(64), nullable=False, default=""),
+    Column("status", String(32), nullable=False, default="Not started"),
+    Column("subject", String(255), nullable=False, default=""),
+    Column("priority", String(32), nullable=False, default=""),
+    Column("task_type", String(32), nullable=False, default=""),
+    Column("effort_level", String(32), nullable=False, default=""),
+)
+
+metadata.create_all(engine)
+
+# Maps the JSON/API field names used by the frontend to database columns
+FIELD_TO_COLUMN = {
+    "uid": "uid",
+    "title": "title",
+    "start": "start",
+    "status": "status",
+    "subject": "subject",
+    "priority": "priority",
+    "taskType": "task_type",
+    "effortLevel": "effort_level",
+}
+COLUMN_TO_FIELD = {v: k for k, v in FIELD_TO_COLUMN.items()}
+
+# Fields the frontend is allowed to change through /api/tasks/update
+EDITABLE_FIELDS = {"title", "start", "status", "subject", "priority", "taskType", "effortLevel"}
 
 def get_start_of_current_week():
     """Returns a datetime object representing Monday 00:00:00 of the current week."""
@@ -39,7 +93,10 @@ def parse_event_datetime(dt_val):
 CLASS_REGEX = r"\[([A-Za-z0-9\s-]+)\]"
 
 def sync_calendar():
-    """Fetches the external feed and updates tasks.json."""
+    """Fetches the external feed and updates the tasks table."""
+    if not FEED_URL:
+        print("Sync skipped: FEED_URL environment variable is not set.")
+        return
     try:
         response = requests.get(FEED_URL, timeout=10)
         cal = icalendar.Calendar.from_ical(response.content)
@@ -85,24 +142,97 @@ def sync_calendar():
 
 
 
+def _row_to_task(row):
+    return {COLUMN_TO_FIELD[key]: (value or "") for key, value in row._mapping.items()}
+
+
+def _task_to_row(task):
+    return {
+        column: (task.get(field) or "")
+        for field, column in FIELD_TO_COLUMN.items()
+    }
+
+
+def _upsert(rows):
+    """Insert rows, or update them if a task with the same uid already exists."""
+    if not rows:
+        return
+    insert = pg_insert if engine.dialect.name == "postgresql" else sqlite_insert
+    stmt = insert(tasks_table).values(rows)
+    stmt = stmt.on_conflict_do_update(
+        index_elements=[tasks_table.c.uid],
+        set_={c.name: stmt.excluded[c.name] for c in tasks_table.columns if c.name != "uid"},
+    )
+    with engine.begin() as conn:
+        conn.execute(stmt)
+
+
 def load_tasks():
-    """Loads tasks from the local JSON file."""
-    if not os.path.exists(JSON_FILE):
-        return {}
-    with open(JSON_FILE, "r") as f:
-        return json.load(f)
+    """Loads all tasks from the database, keyed by uid."""
+    with engine.connect() as conn:
+        rows = conn.execute(select(tasks_table)).all()
+    return {row.uid: _row_to_task(row) for row in rows}
+
+
+def get_task(uid):
+    """Returns a single task dict, or None if it doesn't exist."""
+    with engine.connect() as conn:
+        row = conn.execute(select(tasks_table).where(tasks_table.c.uid == uid)).first()
+    return _row_to_task(row) if row else None
+
+
+def save_task(task):
+    """Creates or updates a single task."""
+    _upsert([_task_to_row(task)])
 
 
 def save_tasks(tasks):
-    """Saves tasks to the local JSON file."""
-    with open(JSON_FILE, "w") as f:
-        json.dump(tasks, f, indent=4)
+    """Creates or updates every task in a {uid: task} dict."""
+    _upsert([_task_to_row(task) for task in tasks.values()])
 
+
+def update_task_fields(uid, **fields):
+    """Updates specific fields on a task. Returns False if the task doesn't exist."""
+    values = {FIELD_TO_COLUMN[name]: value for name, value in fields.items()}
+    with engine.begin() as conn:
+        result = conn.execute(
+            update(tasks_table).where(tasks_table.c.uid == uid).values(**values)
+        )
+    return result.rowcount > 0
+
+
+@app.cli.command("import-json")
+@click.argument("path", default="tasks.json")
+def import_json_command(path):
+    """One-time import of an existing tasks.json file into the database."""
+    with open(path, "r") as f:
+        tasks = json.load(f)
+    save_tasks(tasks)
+    click.echo(f"Imported {len(tasks)} tasks from {path}.")
+
+
+# ---------------------------------------------------------------------------
+# Background feed sync
+# ---------------------------------------------------------------------------
 def background_sync_scheduler(interval_seconds=900):
     """Syncs the external feed every 15 minutes in the background."""
     while True:
         sync_calendar()
         time.sleep(interval_seconds)
+
+
+_sync_lock = threading.Lock()
+_sync_started = False
+
+
+def start_background_sync():
+    """Starts the background sync thread once per process."""
+    global _sync_started
+    with _sync_lock:
+        if _sync_started:
+            return
+        _sync_started = True
+    threading.Thread(target=background_sync_scheduler, daemon=True).start()
 
 def determine_task_type(title, class_code):
     """
@@ -193,11 +323,6 @@ def determine_priority(event_dt):
 def index():
     return render_template("calendar.html")
 
-import uuid
-
-
-
-CLASS_REGEX = r"\[([A-Za-z0-9\s-]+)\]"
 @app.route("/api/tasks", methods=["GET"])
 def get_tasks():
     tasks = load_tasks()
@@ -260,10 +385,10 @@ def update_task_property():
     field = data.get("field")
     value = data.get("value")
 
-    tasks = load_tasks()
-    if uid in tasks:
-        tasks[uid][field] = value
-        save_tasks(tasks)
+    if field not in EDITABLE_FIELDS:
+        return jsonify({"error": f"Field '{field}' cannot be edited"}), 400
+
+    if update_task_fields(uid, **{field: value or ""}):
         return jsonify({"success": True}), 200
 
     return jsonify({"error": "Task not found"}), 404
@@ -275,16 +400,12 @@ def toggle_task():
     data = request.json
     uid = data.get("uid")
 
-    tasks = load_tasks()
-    if uid in tasks:
-        current_status = tasks[uid].get("status", "To Do")
-        tasks[uid]["status"] = (
-            "Completed" if current_status == "To Do" else "To Do"
-        )
-        save_tasks(tasks)
-        return jsonify(
-            {"success": True, "new_status": tasks[uid]["status"]}
-        ), 200
+    task = get_task(uid)
+    if task:
+        current_status = task.get("status") or "To Do"
+        new_status = "Completed" if current_status == "To Do" else "To Do"
+        update_task_fields(uid, status=new_status)
+        return jsonify({"success": True, "new_status": new_status}), 200
 
     return jsonify({"error": "Task not found"}), 404
 
@@ -299,13 +420,12 @@ def create_task():
         return jsonify({"error": "Title and due date are required"}), 400
 
     uid = str(uuid.uuid4())
-    tasks = load_tasks()
 
     # Extract class code if present in the title
     match = re.search(CLASS_REGEX, title)
     class_code = match.group(1).replace(" ", "-").upper() if match else ""
 
-    tasks[uid] = {
+    save_task({
         "uid": uid,
         "title": title,
         "start": due_date,
@@ -314,9 +434,8 @@ def create_task():
         "priority": data.get("priority", ""),
         "taskType": data.get("taskType", ""),
         "effortLevel": data.get("effortLevel", "")
-    }
+    })
 
-    save_tasks(tasks)
     return jsonify({"success": True, "uid": uid}), 201
 
 @app.route("/tasks")
@@ -324,11 +443,13 @@ def tasks_page():
     return render_template("tasks.html")
 
 if __name__ == "__main__":
-    # Perform an initial sync upon running
-    sync_calendar()
+    # Local development only. In production (Render) gunicorn imports this module
+    # and gunicorn.conf.py starts the background sync instead.
+    debug = os.environ.get("FLASK_DEBUG", "1") == "1"
 
-    # Start background auto-sync thread
-    threading.Thread(target=background_sync_scheduler, daemon=True).start()
+    # With debug on, Flask's reloader runs this file twice (a watcher process and
+    # the real server). Only start the sync thread in the real server.
+    if not debug or os.environ.get("WERKZEUG_RUN_MAIN") == "true":
+        start_background_sync()
 
-    # Start server
-    app.run(port=5000, debug=True)
+    app.run(port=int(os.environ.get("PORT", 5000)), debug=debug)
