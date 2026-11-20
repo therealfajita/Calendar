@@ -12,6 +12,12 @@ import uuid
 from sqlalchemy import Column, MetaData, String, Table, Text, create_engine, select, update
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 from sqlalchemy.dialects.sqlite import insert as sqlite_insert
+from dotenv import load_dotenv
+
+# Load settings (FEED_URL, DATABASE_URL, ...) from a .env file next to this file,
+# if one exists. Used for local development; on Render the variables come from the
+# dashboard, and real environment variables always take priority over the file.
+load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
 
 app = Flask(__name__)
 
